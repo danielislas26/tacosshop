@@ -1,0 +1,54 @@
+.Mapa{
+    padding-top: 32px;
+}
+
+.Titulo-Container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.About-Container{
+
+
+    background-color: #1A3D5F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.subText1{
+    font-size: 18px;
+    width: 266px;
+    height: 58px;
+    height: auto;
+    margin-bottom: 53px;
+    margin-top: 7px;
+}
+.subText2{
+    font-size: 18px;
+    width: 266px;
+    height: 215px;
+    margin-bottom: 53px;
+    margin-top: 7px;
+
+}
+
+.About-Title{
+    font-size: 18px;
+    margin: 23px;
+}
+
+.subText-Container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextoContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}

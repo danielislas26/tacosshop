@@ -1,0 +1,112 @@
+.Holder-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A3D5F;
+    padding-top: 8px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:22px ;
+    margin-bottom: 10px;
+}
+
+.Holder-container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 360px;
+   height: 160px; 
+}
+
+.imagen{
+    margin-top: 15px;
+    position: absolute;
+}
+
+
+
+.l1-r{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.l1-s{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}   
+.l2-r{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.l2-s{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 14px;
+}
+.l3-r{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.l3-s{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+}
+
+.h1{ 
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 600px;
+    color: white;
+    
+    
+}
+.h2{ 
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600px;
+    color: white;
+    
+}
+.h3{ 
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600px;
+    color: white;
+    
+}
+.h4{ 
+    font-family: 'Inter';
+    font-size:18px;
+    font-weight: 600px;
+    
+}
+.h5{ 
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600px;
+    
+}
+
+
+
+
