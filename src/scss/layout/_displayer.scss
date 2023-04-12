@@ -1,7 +1,13 @@
+@use '../base/mixins' as m;
 .Card{
 width: 320px;
 height: 229px;
 margin: 10px;
+ @include m.tablet{
+   /* max-width: 50%;
+    margin-left: 10px;*/
+ 
+ }
 }
 
 
@@ -48,11 +54,26 @@ margin: 10px;
 }
 
 .Carrousel{
-    display: flex;
-    flex-direction: column;
+    
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    
+
+     @include m.tablet{
+        /*height: 544px;
+        flex-flow: column wrap;
+        justify-content: flex-start;*/
+      
+        
+
+
+     }
     
 }
+
+
 
 .Card-Text{
     width: 295px;

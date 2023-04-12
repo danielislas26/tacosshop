@@ -344,10 +344,6 @@ label {
   font-family: "Lora";
 }
 
-hr {
-  width: 296px;
-}
-
 .Header-container {
   background-color: #1A3D5F;
   width: 100%;
@@ -386,7 +382,7 @@ hr {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .Holder-container-img {
@@ -496,6 +492,12 @@ hr {
   height: 229px;
   margin: 10px;
 }
+@media (min-width: 768px) {
+  .Card {
+    /* max-width: 50%;
+     margin-left: 10px;*/
+  }
+}
 
 .Card-img-Container {
   width: auto;
@@ -536,9 +538,17 @@ hr {
 }
 
 .Carrousel {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .Carrousel {
+    /*height: 544px;
+    flex-flow: column wrap;
+    justify-content: flex-start;*/
+  }
 }
 
 .Card-Text {
@@ -547,41 +557,98 @@ hr {
 
 .Mapa {
   padding-top: 32px;
+  width: 360px;
+  height: 219px;
+}
+@media (min-width: 768px) {
+  .Mapa {
+    width: 185px;
+    height: 185px;
+    padding-top: 5px;
+  }
 }
 
 .Titulo-Container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .Titulo-Container {
+    align-items: flex-start;
+  }
+}
+
+.Titulo-Text {
+  margin: 0;
 }
 
 .About-Container {
   background-color: #1A3D5F;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .About-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+  }
 }
 
 .subText1 {
-  font-size: 18px;
+  font-size: 16px;
   width: 266px;
   height: 58px;
   height: auto;
   margin-bottom: 53px;
   margin-top: 7px;
 }
+@media (min-width: 768px) {
+  .subText1 {
+    width: 443px;
+    height: 45px;
+    margin-bottom: 0;
+  }
+}
 
 .subText2 {
-  font-size: 18px;
+  font-size: 16px;
   width: 266px;
   height: 215px;
-  margin-bottom: 53px;
+  margin-bottom: 15px;
   margin-top: 7px;
+}
+@media (min-width: 768px) {
+  .subText2 {
+    width: 443px;
+    height: 110px;
+  }
+}
+
+.Linea {
+  width: 296px;
+}
+@media (min-width: 768px) {
+  .Linea {
+    width: 451px;
+    border-top: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .About-Title {
   font-size: 18px;
   margin: 23px;
+}
+@media (min-width: 768px) {
+  .About-Title {
+    margin: 0;
+  }
 }
 
 .subText-Container {
@@ -595,6 +662,11 @@ hr {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .TextoContainer {
+    margin-top: 0;
+  }
 }
 
 .Menu-Popup-Container {
@@ -645,8 +717,15 @@ hr {
   }
 }
 
+.l1-s-menu {
+  color: white;
+  font-family: "Lora";
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
 @media (min-width: 768px) {
-  .l1-s {
+  .l1-s-menu {
     color: #285A8B;
   }
 }/*# sourceMappingURL=app.css.map */

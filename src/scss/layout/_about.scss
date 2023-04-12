@@ -1,11 +1,27 @@
+@use '../base/mixins' as m;
 .Mapa{
     padding-top: 32px;
+    width:360px;
+    height:219px;
+    @include m.tablet{
+        width: 185px;
+        height: 185px;
+        padding-top: 5px;
+    }
+
 }
 
 .Titulo-Container{
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: flex-start;
+@include m.tablet{
+    align-items: flex-start;
+}
+}
+
+.Titulo-Text{
+    margin: 0;
 }
 
 .About-Container{
@@ -14,29 +30,60 @@ align-items: center;
     background-color: #1A3D5F;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    @include m.tablet{
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+    }
 
 }
 .subText1{
-    font-size: 18px;
+    font-size: 16px;
     width: 266px;
     height: 58px;
     height: auto;
     margin-bottom: 53px;
     margin-top: 7px;
+    @include m.tablet{
+        width: 443px;
+        height: 45px;
+        margin-bottom:0 ;
+        
+    }
 }
 .subText2{
-    font-size: 18px;
+    font-size: 16px;
     width: 266px;
     height: 215px;
-    margin-bottom: 53px;
+    margin-bottom: 15px;
     margin-top: 7px;
+    @include m.tablet{
+        width: 443px;
+        height: 110px;
+    }
 
+}
+
+.Linea{
+    width: 296px;
+    @include m.tablet{
+        width: 451px;
+        border-top: 3px solid white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
 }
 
 .About-Title{
     font-size: 18px;
     margin: 23px;
+    @include m.tablet{
+        margin: 0;
+        
+    }
 }
 
 .subText-Container{
@@ -50,5 +97,10 @@ align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    @include m.tablet{
+        margin-top: 0;
+    }
     
 }
+
+

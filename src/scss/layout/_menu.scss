@@ -56,7 +56,12 @@
  justify-content: center;
 }
 
-.l1-s{
+.l1-s-menu{
+    color: white;
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
     @include m.tablet{
         color: #285A8B;
     }

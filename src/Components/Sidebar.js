@@ -2,7 +2,9 @@ import React from "react";
 import Barra from './Displayer';
 import "../scss/app.css"
 
-const SideBar = (props) => <div className="Carrousel">
+const SideBar = (props) => 
+
+<div className="Carrousel">
 
     <Barra
         Platillo="Kilo de Barbacoa"
@@ -30,6 +32,7 @@ const SideBar = (props) => <div className="Carrousel">
     />
 
 
-</div>;
+</div>
+;
 
 export default SideBar 
