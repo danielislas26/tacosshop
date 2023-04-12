@@ -1,3 +1,4 @@
+@use '../base/mixins' as m;
 .Holder-container{
     display: flex;
     flex-direction: column;
@@ -31,6 +32,15 @@
 .imagen{
     margin-top: 15px;
     position: absolute;
+    z-index: 2;
+    display: none;
+@include m.tablet{
+    margin-top: 0;
+    top: 5px;
+    display: block;
+    
+}
+
 }
 
 

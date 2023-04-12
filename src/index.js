@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Menu from './Components/Menu';
 import {Horario,Header} from './Components/Header';
 import {Holder,Anuncio} from './Components/Holder';
 import  SideBar from './Components/Sidebar';
@@ -13,6 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header/>
+    <Menu></Menu>
     <Holder/>
     <Anuncio/>
     <SideBar/>
