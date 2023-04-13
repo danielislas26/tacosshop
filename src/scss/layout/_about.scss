@@ -14,14 +14,21 @@
 .Titulo-Container{
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 @include m.tablet{
     align-items: flex-start;
 }
 }
 
 .Titulo-Text{
-    margin: 0;
+    margin: 5px;
+    margin-top: 10px;
+    @include m.tablet{
+        margin: 2px;
+        margin-top: 0;
+        padding: 0;
+
+    }
 }
 
 .About-Container{
@@ -30,10 +37,12 @@ align-items: flex-start;
     background-color: #1A3D5F;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 0;
     @include m.tablet{
+        padding-top: 50px;
+        align-items: flex-start;
         display: flex;
         flex-direction: row;
         gap: 37px;
@@ -45,12 +54,12 @@ align-items: flex-start;
     width: 266px;
     height: 58px;
     height: auto;
-    margin-bottom: 53px;
+    margin-bottom: 40px;
     margin-top: 7px;
     @include m.tablet{
         width: 443px;
         height: 45px;
-        margin-bottom:0 ;
+        margin-bottom:20px;
         
     }
 }
