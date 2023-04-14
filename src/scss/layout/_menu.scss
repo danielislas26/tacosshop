@@ -17,8 +17,10 @@
         //padding: 6px;
         background-color: white;
         top: 74px;
-        
-        
+    }
+    @include m.desktop{
+        height: 54px;
+        width: 70%;
     }
     margin-top: 1px;
    height: 183px;
@@ -34,7 +36,7 @@
 
 .Menu-Block{
     @include m.tablet{
-        height: 88%;
+        height: 50%;
         margin-left: 12px;
         margin-right: 12px;
         background-color: white;

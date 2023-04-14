@@ -400,6 +400,11 @@ label {
   width: 360px;
   height: 160px;
 }
+@media (min-width: 992px) {
+  .imgContainer {
+    height: 320px;
+  }
+}
 
 .imagen {
   margin-top: 15px;
@@ -538,6 +543,7 @@ label {
 }
 
 .Carrousel {
+  width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -565,6 +571,12 @@ label {
     width: 185px;
     height: 185px;
     padding-top: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .Mapa {
+    width: 287px;
+    height: 231px;
   }
 }
 
@@ -608,7 +620,6 @@ label {
     gap: 37px;
   }
 }
-
 .subText1 {
   font-size: 16px;
   width: 266px;
@@ -622,6 +633,11 @@ label {
     width: 443px;
     height: 45px;
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .subText1 {
+    width: 564px;
   }
 }
 
@@ -638,6 +654,11 @@ label {
     height: 110px;
   }
 }
+@media (min-width: 992px) {
+  .subText2 {
+    width: 700px;
+  }
+}
 
 .Linea {
   width: 296px;
@@ -648,6 +669,11 @@ label {
     border-top: 3px solid white;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .Linea {
+    width: 700px;
   }
 }
 
@@ -666,6 +692,11 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .subText-Container {
+    justify-content: flex-start;
+  }
 }
 
 .TextoContainer {
@@ -707,6 +738,12 @@ label {
     top: 74px;
   }
 }
+@media (min-width: 992px) {
+  .Menu-Popup {
+    height: 54px;
+    width: 70%;
+  }
+}
 
 .Menu-Block {
   background-color: #285A8B;
@@ -720,7 +757,7 @@ label {
 }
 @media (min-width: 768px) {
   .Menu-Block {
-    height: 88%;
+    height: 50%;
     margin-left: 12px;
     margin-right: 12px;
     background-color: white;
