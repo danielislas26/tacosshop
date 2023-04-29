@@ -1,9 +1,25 @@
-import React from "react";
+import React,{ useState } from "react";
 import "../scss/app.css";
 
-const Menu = (props) => 
-<>
-<div className="Menu-Popup-Container">
+export default function Modal() {
+    const [modal,setModal] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+
+    return (
+        <>
+           
+            <button
+                onClick={toggleModal}
+                className="btn-modal">
+                    Open
+            </button>
+            
+            {modal && (
+                
+                <div className="Menu-Popup-Container">
 
                 <div className="Menu-Popup">
                    
@@ -26,6 +42,8 @@ const Menu = (props) =>
                   
                 </div>
                 </div>
-</>
-
-export default Menu;
+            )}
+            
+        </>
+    );
+}

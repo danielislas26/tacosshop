@@ -11,7 +11,7 @@ const Header = (props) =>
     {/*<img src={require("../imgs/babo-strech.png")} alt="los paquis logo" width={35} height={50}></img>*/}
   </div>
   <div className="Icon-container">
-    <img src={require("../imgs/shopping-cart.png")} alt="burger-menu" width={31} height={31}></img>
+    
   </div>
   {/*<i className=" fa-solid fa-bars" width="50" height="50"></i>*/}
 </div>
@@ -20,6 +20,13 @@ const Header = (props) =>
 const Horario = (props) => <div>
   <h1>{props.msg}</h1>
   </div>;
+
+
+
+
+
+
+
 
 export { Header,Horario}
 

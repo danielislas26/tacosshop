@@ -10,7 +10,21 @@
     padding-right:12px;
     padding-bottom:22px ;
     margin-bottom: 5px;
+
     
+}
+
+.Text-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include m.telefono{
+        visibility: visible;
+    }
+    @include m.tablet{
+        visibility: hidden;
+    }
 }
 
 .Holder-container-img{
@@ -28,8 +42,13 @@
     align-items: center;
    width: 360px;
    height: 160px; 
-   @include m.desktop{
-    height: 320px;
+
+@include m.telefono{
+    
+}
+
+@include m.tablet{
+    height: 0px;
 }
 }
 
@@ -37,13 +56,14 @@
     margin-top: 15px;
     position: absolute;
     z-index: 2;
-    display: none;
+    
 @include m.tablet{
     margin-top: 0;
     top: 5px;
     display: block;
-    
 }
+
+
 
 }
 
@@ -123,4 +143,12 @@
 
 
 
-
+.banner{
+    width: 679px;
+    height: 364px;
+    display: none;
+    @include m.tablet{
+        display: block;
+    }
+   
+}

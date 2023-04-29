@@ -385,6 +385,23 @@ label {
   margin-bottom: 5px;
 }
 
+.Text-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .Text-Container {
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .Text-Container {
+    visibility: hidden;
+  }
+}
+
 .Holder-container-img {
   display: flex;
   flex-direction: column;
@@ -400,9 +417,9 @@ label {
   width: 360px;
   height: 160px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .imgContainer {
-    height: 320px;
+    height: 0px;
   }
 }
 
@@ -410,7 +427,6 @@ label {
   margin-top: 15px;
   position: absolute;
   z-index: 2;
-  display: none;
 }
 @media (min-width: 768px) {
   .imagen {
@@ -490,6 +506,17 @@ label {
   font-family: "Inter";
   font-size: 14px;
   font-weight: 600px;
+}
+
+.banner {
+  width: 679px;
+  height: 364px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .banner {
+    display: block;
+  }
 }
 
 .Card {
@@ -713,6 +740,12 @@ label {
 .Menu-Popup-Container {
   display: flex;
   justify-content: center;
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .Menu-Popup-Container {
+    visibility: visible;
+  }
 }
 
 .Menu-Popup {

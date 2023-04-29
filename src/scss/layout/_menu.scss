@@ -3,6 +3,10 @@
 .Menu-Popup-Container{
     display: flex;
     justify-content: center;
+    visibility: hidden;
+    @include m.tablet{
+        visibility: visible;
+    }
 
 }
 
