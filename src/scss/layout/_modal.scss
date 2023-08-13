@@ -1,0 +1,129 @@
+.popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 75%;
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+.modal {
+    font-size: 14px;
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #1A3D5F;
+    border-radius: 5px 0 0 0;
+    color: white;
+  }
+  .modal > .content {
+    width: 100%;
+    
+    
+  }
+  .modal > .actions {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #1A3D5F;
+    border-radius:  0 0 5px 5px;
+    color: white;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  .menu-item {
+
+    cursor: pointer;
+    padding: 13px;
+    height: 28px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .menu-item:hover {
+    color: #2980b9;
+  }
+
+  .menu-counter{
+    //padding: 0 10px 0 10px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-button{
+    width: 22px;
+    height: 22px;
+  }
+
+  .arrows-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .acumulado-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  .acumulado-container > div {
+    padding: 0 35px 0 35px;
+    font-size: 18px;
+
+  }
+
+  .acumulado-container > div > p {
+    margin-top: 0px;
+  }
+
+  .cantidad {
+    font-size: 18px;
+  }
+
+  .button-cart{
+    margin-top: 10px;
+  }
+
+  .button-dots{
+    cursor: pointer;
+    background-color: #1A3D5F;
+    border: none;
+    width: 80px;
+  }
+
+

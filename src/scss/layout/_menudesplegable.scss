@@ -1,0 +1,49 @@
+[role='tooltip'].popup-content {
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 0px 5px;
+    background-color: #123252;
+    
+    
+    
+  }
+
+  .popup-arrow {
+    color: #123252;
+  }
+
+  [data-popup='tooltip'].my-popup-overlay {
+    background: transparent;
+    
+  }
+
+.Section{
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transition: background-color 0.3s ease-out 100ms
+}
+.Section:hover{
+  color: white;
+  background-color: #2C5B89;
+
+}
+
+.Toolbar{
+  width: auto;
+  border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    background-color: #123252;
+}
+
+.Section > p {
+  color: white;
+  font-size: 17px;
+}
+
+
+ 
+

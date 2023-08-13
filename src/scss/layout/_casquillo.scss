@@ -1,0 +1,65 @@
+.Casquillo-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Carrito-producto-titulo{
+    color: black;
+    width: 154px;
+    margin: 5px auto;
+    font-size: 16px;
+    font-family: 'lora';
+}
+
+.numerador-container {
+    margin: 5px auto;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.numerador-container > h3 {
+color: black;
+font-size: 16px;
+font-family: 'lora';
+}
+
+.precio-container{
+    width: 40px;
+    margin: 5px auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.basurero-container{
+    height: 100%;
+    margin: 5px auto;
+}
+
+.numerador-container-button{
+    margin: 5px auto;
+}
+
+.pp > h3{
+    color: black;
+    font-size: 16px;
+    font-family: 'lora';
+}
+
+.titulo-platillo{
+    margin: 5px;
+}
+
+.Carrito-counter-button button{
+    border-color: #2C5B89;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}

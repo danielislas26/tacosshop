@@ -1,0 +1,96 @@
+.Conteo-container{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    border-top: dashed;
+    border-bottom: dashed;
+}
+.Conteo-Text-Container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 0;
+}
+.Conteo-Text-Container > label {
+    color: black;
+    padding: 10px 0 10px 0;
+    font-weight: 600;
+    
+}
+
+.Conteo-Total-Container > h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.Conteo-Total-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.Conteo-Total > h2 {
+    color: black;
+    font-size: 20px;
+}
+
+.Conteo-Total{
+    display: flex;
+    flex-direction: row;
+}
+
+.Conteo-price{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+}
+.Conteo-price > label {
+    color: black;
+    font-weight: 600;
+}
+
+.Conteo-percent{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px 0 10px 0;
+}
+.Conteo-percent > label {
+    color: black;
+    font-weight: 600;
+}
+
+.Proceder-off{
+    background: #2C5B89;
+    border: none;
+    width: 223px;
+    height: 37px;
+    color: white;
+    cursor: pointer;
+}
+
+.Proceder-off:active{
+background-color: white;
+color: #2C5B89;
+
+}
+
+.Proceder.on{
+    background-color: white;
+    color: #2C5B89;
+    border: none;
+    width: 223px;
+    height: 37px;
+}
+.Proceder-off  {
+    font-weight: 600;
+}
+
+
+
+.Conteo-Proceder-Container{
+    display: flex;
+    justify-content: center;
+}
