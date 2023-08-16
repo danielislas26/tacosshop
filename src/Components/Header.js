@@ -100,26 +100,7 @@ function Des2() {
   );
 }
 
-/*const Des2 = (props) => (
-  <div className="Header-container">
-    <div className="Icon-container">
-   
-    </div>
-    <div className="Icon-container">
-     <button className="home-button"><img src={require("../imgs/miniatura.png")} alt="miniatura" width={45} height={45}></img></button>
-      
-    </div>
-    <div className="Icon-container">
 
-    </div>
-    
-    <Routes>
-          <Route path="/home" element={<Home />} />
-        
-        </Routes>
-  </div>
-);
-*/
 const Horario = (props) => (
   <div>
     <h1>{props.msg}</h1>
