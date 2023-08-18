@@ -1,25 +1,29 @@
 import {React,useContext} from "react";
 import { CartContext } from "../CartContext";
-import { comida } from "./productsStore";
+import { comida,menu } from "./productsStore";
 
 
-const Mob = (props) => {
-  const product = props.product;
+const Mob = ({types}) => {
+  const product = types;
   const cart = useContext(CartContext);
-  let tipos = props.Tipo.map((o)=>{ return o.id})
+//  let tipos = props.Tipo.map((o)=>{ return o.id})
   
  /* let tipos = props.Tipos.map((tipo)=>{
     return tipo.id
   })*/
-  const productQuantity = cart.getProductQuantity(props.Id);
+
+
+ 
   console.log(cart.items);
-  return comida.map((plato, idx, arr) =>
-    plato.id === props.Id ? (
-      plato.tipos.map((tipos) => (
+  
+    
+     return types.map((tipo) => {
+        const productQuantity = cart.getProductQuantity(tipo.subid)
+        return (
         <div className="menu-item" >
-          <p>{tipos.title}</p>
+          <p>{tipo.title}</p>
           <div className="arrows-container">
-            <button onClick={()=> cart.addOneToCart(tipos.id)}>
+            <button onClick={()=> cart.addOneToCart(tipo.subid)}>
               <img
                 src={require("../imgs/up-arrow.png")}
                 alt="flecha"
@@ -28,7 +32,7 @@ const Mob = (props) => {
               ></img>
             </button>
             <p className="menu-counter">{productQuantity}</p>
-            <button onClick={()=> cart.removeOneFromCart(tipos.id)}>
+            <button onClick={()=> cart.removeOneFromCart(tipo.subid)}>
               <img
                 src={require("../imgs/down-arrow.png")}
                 alt="flecha"
@@ -38,11 +42,8 @@ const Mob = (props) => {
             </button>
           </div>
         </div>
-      ))
-    ) : (
-      <div></div>
-    )
-  );
+      )})
+    
 };
 
 export default Mob;

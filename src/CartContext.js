@@ -19,7 +19,6 @@ export function CartProvider({children}) {
 
     function getProductQuantity(id) {
         const quantity = cartProducts.find(product => product.id === id)?.quantity;
-        
         if (quantity === undefined) {
             return 0;
         }
@@ -27,7 +26,10 @@ export function CartProvider({children}) {
         return quantity;
     }
 
+    
+  
     function addOneToCart(id) {
+
         const quantity = getProductQuantity(id);
 
         if (quantity === 0) { // product is not in cart

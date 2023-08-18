@@ -95,12 +95,14 @@ const comida = [
     description: "Delicioso Consome de Borrego con arroz y garbanzo",
     tipos: [
       {
-        id: 1,
+        id:1,
+        subid: 1,
         title: "chico",
         precio: 30,
       },
       {
-        id: 2,
+        id:1,
+        subid: 2,
         title: "grande",
         precio: 50,
       },
@@ -115,47 +117,56 @@ const comida = [
       "Delicioso taco con barbacoa recien salida del horno sobre dos tortilla de maiz",
     tipos: [
       {
-        id: 3,
+        id:2,
+        subid: 3,
         title: "Campechano",
         precio: 500,
       },
       {
-        id: 4,
+        id:2,
+        subid: 4,
         title: "Costilla",
         precio: 500,
       },
       {
-        id: 5,
+        id:2,
+        subid: 5,
         title: "Espaldilla",
         precio: 500,
       },
       {
-        id: 6,
+        id:2,
+        subid: 6,
         title: "Falda",
         precio: 500,
       },
       {
-        id:7,
+        id:2,
+        subid:7,
         title: "Lomo",
         precio: 500,
       },
       {
-        id:8,
+        id:2,
+        subid:8,
         title: "Maciza",
         precio: 500,
       },
       {
-        id:9,
+        id:2,
+        subid:9,
         title: "Panza",
         precio: 500,
       },
       {
-        id:10,
+        id:2,
+        subid:10,
         title: "Pescuezo",
         precio: 500,
       },
       {
-        id:11,
+        id:2,
+        subid:11,
         title: "Surtido",
         precio: 500,
       },
@@ -169,39 +180,129 @@ const comida = [
     description:
       "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
-      {
-        id:12,
+      { id:3,
+        subid:12,
         title: "Costilla",
         precio: 500,
       },
-      {
-        id:13,
+      { id:3,
+        subid:13,
         title: "Espaldilla",
         precio: 500,
       },
-      {
-        id:14,
+      { id:3,
+        subid:14,
         title: "Falda",
         precio: 500,
       },
-      {
-        id:15,
+      { id:3,
+        subid:15,
         title: "Lomo",
         precio: 500,
       },
-      {
-        id:16,
+      { id:3,
+        subid:16,
         title: "Maciza",
         precio: 500,
       },
-      {
-        id:17,
+      { id:3,
+        subid:17,
         title: "Pescuezo",
         precio: 500,
       },
     ],
   },
 ];
+
+const menu = [
+  {
+    id: 1,
+    title: "chico",
+    precio: 30,
+  },
+  {
+    id: 2,
+    title: "grande",
+    precio: 50,
+  },
+  {
+    id: 3,
+    title: "Campechano",
+    precio: 500,
+  },
+  {
+    id: 4,
+    title: "Costilla",
+    precio: 500,
+  },
+  {
+    id: 5,
+    title: "Espaldilla",
+    precio: 500,
+  },
+  {
+    id: 6,
+    title: "Falda",
+    precio: 500,
+  },
+  {
+    id:7,
+    title: "Lomo",
+    precio: 500,
+  },
+  {
+    id:8,
+    title: "Maciza",
+    precio: 500,
+  },
+  {
+    id:9,
+    title: "Panza",
+    precio: 500,
+  },
+  {
+    id:10,
+    title: "Pescuezo",
+    precio: 500,
+  },
+  {
+    id:11,
+    title: "Surtido",
+    precio: 500,
+  },
+  {
+    id:12,
+    title: "Costilla",
+    precio: 500,
+  },
+  {
+    id:13,
+    title: "Espaldilla",
+    precio: 500,
+  },
+  {
+    id:14,
+    title: "Falda",
+    precio: 500,
+  },
+  {
+    id:15,
+    title: "Lomo",
+    precio: 500,
+  },
+  {
+    id:16,
+    title: "Maciza",
+    precio: 500,
+  },
+  {
+    id:17,
+    title: "Pescuezo",
+    precio: 500,
+  },
+]
+
+
 
 let objeto = productsArray.map((product) => {
   product.tipo.map((producto) => {
@@ -220,4 +321,4 @@ function getProductData(id) {
   return productData;
 }
 
-export { comida, productsArray, getProductData };
+export { comida, productsArray, getProductData,menu };

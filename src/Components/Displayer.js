@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Popup from "reactjs-popup";
 import Mob from "./Item";
 import { productsArray, comida } from "./productsStore";
 import "../scss/app.css";
 import ShowPlatillos from "./Item";
+import { CartContext } from "../CartContext";
 
-function Barra(props) {
+function Barra({platillo,puntuacion,precio,descripcion,tipos}) {
+  const cart = useContext(CartContext);
+  const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0);
   return (
     <div
       className="Card"
@@ -23,7 +26,7 @@ function Barra(props) {
       <div className="Card-img-Container">
         <div className="Card-imgandText">
           <label className="Card-img-Container-Text l1-s">
-            {props.Platillo}
+            {platillo}
           </label>
           <div className="Card-img-Container-Text">
             <img
@@ -34,7 +37,7 @@ function Barra(props) {
               height={22}
             ></img>
             <label className="Card-img-Text-Container-Text-Text l1-s">
-              {props.Puntuacion}
+              {puntuacion}
             </label>
           </div>
         </div>
@@ -46,12 +49,12 @@ function Barra(props) {
               width={22}
               height={22}
             ></img>
-            <label className="l1-s">{props.Precio}</label>
+            <label className="l1-s">{precio}</label>
           </div>
         </div>
       </div>
       <div className="Card-Text-Container">
-        <label className="Card-Text l3-s">{props.Descripcion}</label>
+        <label className="Card-Text l3-s">{descripcion}</label>
         <Popup
           trigger={
             <button className="button button-dots">
@@ -71,15 +74,15 @@ function Barra(props) {
               <button className="close" onClick={close}>
                 &times;
               </button>
-              <div className="header"> {props.Platillo} </div>
+              <div className="header"> {platillo} </div>
               <div className="content">
                 {" "}
                 { 
                   <Mob
-                    title={props.Platillo}
-                    comida={props.Platillo}
-                    Id={props.Key}
-                    Tipo={props.Tipos}
+                    title={platillo}
+                    
+                    types={tipos}
+                    
                   />
                 }
               </div>
@@ -99,7 +102,7 @@ function Barra(props) {
                 </div>
                 <div className="acumulado-container">
                   <div>
-                    <p>25</p>
+                    <p>{productsCount}</p>
                   </div>
                   <div>
                     <p>$250</p>
