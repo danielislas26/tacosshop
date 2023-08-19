@@ -6,7 +6,9 @@ import { getProductData,productsArray } from "./Components/productsStore";
 export const CartContext = createContext({
     items: [],
     getProductQuantity: () => {},
+    getItemQuantity: () => {},
     addOneToCart: () => {},
+    filter: () => {},
     removeOneFromCart: () => {},
     deleteFromCart: () => {},
     getTotalCost: () => {}
@@ -18,7 +20,7 @@ export function CartProvider({children}) {
     // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]
 
     function getProductQuantity(id) {
-        const quantity = cartProducts.find(product => product.id === id)?.quantity;
+        const quantity = cartProducts.find(product => product.subid === id)?.quantity;
         if (quantity === undefined) {
             return 0;
         }
@@ -26,18 +28,26 @@ export function CartProvider({children}) {
         return quantity;
     }
 
+    function getItemQuantity(id){
+        let arr = cartProducts.filter(objeto => objeto.id === id )
+        const sum = arr.reduce((acc,obj)=>{
+          return acc + obj.quantity
+        },0);
+        return sum
+    }
     
   
-    function addOneToCart(id) {
+    function addOneToCart(obj) {
 
-        const quantity = getProductQuantity(id);
+        const quantity = getProductQuantity(obj.subid);
 
         if (quantity === 0) { // product is not in cart
             setCartProducts(
                 [
                     ...cartProducts,
-                    {
-                        id: id,
+                    {   
+                        id: obj.id,
+                        subid: obj.subid,
                         quantity: 1
                     }
                 ]
@@ -47,7 +57,7 @@ export function CartProvider({children}) {
             setCartProducts(
                 cartProducts.map(
                     product =>
-                    product.id === id                                // if condition
+                    product.subid === obj.subid                              // if condition
                     ? { ...product, quantity: product.quantity + 1 } // if statement is true
                     : product                                        // if statement is false
                 )
@@ -55,22 +65,25 @@ export function CartProvider({children}) {
         }
     }
 
-    function removeOneFromCart(id) {
-        const quantity = getProductQuantity(id);
+    function removeOneFromCart(obj) {
+        const quantity = getProductQuantity(obj.subid);
 
         if(quantity == 1) {
-            deleteFromCart(id);
+            deleteFromCart(obj.subid);
         } else {
             setCartProducts(
                 cartProducts.map(
                     product =>
-                    product.id === id                                // if condition
+                    // product.id es el id del producto añadido al carrito
+                    product.subid === obj.subid                                // if condition
                     ? { ...product, quantity: product.quantity - 1 } // if statement is true
                     : product                                        // if statement is false
                 )
             )
         }
     }
+
+
 
     function deleteFromCart(id) {
         // [] if an object meets a condition, add the object to array
@@ -79,7 +92,7 @@ export function CartProvider({children}) {
         setCartProducts(
             cartProducts =>
             cartProducts.filter(currentProduct => {
-                return currentProduct.id != id;
+                return currentProduct.subid != id;
             })  
         )
     }
@@ -96,6 +109,7 @@ export function CartProvider({children}) {
     const contextValue = {
         items: cartProducts,
         getProductQuantity,
+        getItemQuantity,
         addOneToCart,
         removeOneFromCart,
         deleteFromCart,

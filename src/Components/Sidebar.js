@@ -1,9 +1,8 @@
 import React from "react";
-import { Barra, Pop } from "./Displayer";
-import { productsArray } from "../Components/productsStore";
+import { Barra } from "./Displayer";
 import { comida } from "../Components/productsStore";
 import "../scss/app.css";
-import { getByTitle } from "@testing-library/react";
+
 
 export default function Store() {
   return (
@@ -14,6 +13,7 @@ export default function Store() {
           platillo={product.title}
           precio={product.price}
           key={product.id}
+          id={product.id}
           puntuacion={product.score}
           descripcion={product.description}
           tipos={product.tipos}

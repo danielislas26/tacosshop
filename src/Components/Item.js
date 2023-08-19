@@ -1,6 +1,6 @@
 import {React,useContext} from "react";
 import { CartContext } from "../CartContext";
-import { comida,menu } from "./productsStore";
+
 
 
 const Mob = ({types}) => {
@@ -23,7 +23,7 @@ const Mob = ({types}) => {
         <div className="menu-item" >
           <p>{tipo.title}</p>
           <div className="arrows-container">
-            <button onClick={()=> cart.addOneToCart(tipo.subid)}>
+            <button onClick={()=> cart.addOneToCart(tipo)}>
               <img
                 src={require("../imgs/up-arrow.png")}
                 alt="flecha"
@@ -32,7 +32,7 @@ const Mob = ({types}) => {
               ></img>
             </button>
             <p className="menu-counter">{productQuantity}</p>
-            <button onClick={()=> cart.removeOneFromCart(tipo.subid)}>
+            <button onClick={()=> cart.removeOneFromCart(tipo)}>
               <img
                 src={require("../imgs/down-arrow.png")}
                 alt="flecha"

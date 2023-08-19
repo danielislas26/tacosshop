@@ -1,15 +1,20 @@
-import React, { useContext } from "react";
+import { React,useContext } from "react";
 import Popup from "reactjs-popup";
 import Mob from "./Item";
-import { productsArray, comida } from "./productsStore";
+
 import "../scss/app.css";
-import ShowPlatillos from "./Item";
+
 import { CartContext } from "../CartContext";
 
-function Barra({platillo,puntuacion,precio,descripcion,tipos}) {
+function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0);
+  //const cantidad = cart.getItemQuantity(id)
+  const cantidad = cart.getItemQuantity(id)
+  
+  
   return (
+    
     <div
       className="Card"
       trigger={
@@ -28,6 +33,7 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos}) {
           <label className="Card-img-Container-Text l1-s">
             {platillo}
           </label>
+    
           <div className="Card-img-Container-Text">
             <img
               className="Card-img-Container-Text-icon"
@@ -102,7 +108,7 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos}) {
                 </div>
                 <div className="acumulado-container">
                   <div>
-                    <p>{productsCount}</p>
+                    <p>{cantidad}</p>
                   </div>
                   <div>
                     <p>$250</p>

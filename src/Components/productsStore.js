@@ -214,93 +214,7 @@ const comida = [
   },
 ];
 
-const menu = [
-  {
-    id: 1,
-    title: "chico",
-    precio: 30,
-  },
-  {
-    id: 2,
-    title: "grande",
-    precio: 50,
-  },
-  {
-    id: 3,
-    title: "Campechano",
-    precio: 500,
-  },
-  {
-    id: 4,
-    title: "Costilla",
-    precio: 500,
-  },
-  {
-    id: 5,
-    title: "Espaldilla",
-    precio: 500,
-  },
-  {
-    id: 6,
-    title: "Falda",
-    precio: 500,
-  },
-  {
-    id:7,
-    title: "Lomo",
-    precio: 500,
-  },
-  {
-    id:8,
-    title: "Maciza",
-    precio: 500,
-  },
-  {
-    id:9,
-    title: "Panza",
-    precio: 500,
-  },
-  {
-    id:10,
-    title: "Pescuezo",
-    precio: 500,
-  },
-  {
-    id:11,
-    title: "Surtido",
-    precio: 500,
-  },
-  {
-    id:12,
-    title: "Costilla",
-    precio: 500,
-  },
-  {
-    id:13,
-    title: "Espaldilla",
-    precio: 500,
-  },
-  {
-    id:14,
-    title: "Falda",
-    precio: 500,
-  },
-  {
-    id:15,
-    title: "Lomo",
-    precio: 500,
-  },
-  {
-    id:16,
-    title: "Maciza",
-    precio: 500,
-  },
-  {
-    id:17,
-    title: "Pescuezo",
-    precio: 500,
-  },
-]
+
 
 
 
@@ -321,4 +235,4 @@ function getProductData(id) {
   return productData;
 }
 
-export { comida, productsArray, getProductData,menu };
+export { comida, productsArray, getProductData };
