@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Popup from "reactjs-popup";
+import { CartPoup } from "./Shoping";
 import "../scss/app.css";
 
 class Header extends React.Component {
@@ -58,14 +59,30 @@ const Des = (props) => (
       {/*<img src={require("../imgs/babo-strech.png")} alt="los paquis logo" width={35} height={50}></img>*/}
     </div>
     <div className="Icon-container">
-      <img
-        type="button"
-        className="d"
-        src={require(`../imgs/empty-cart.png`)}
-        alt="burger-menu"
-        width={30}
-        height={30}
-      ></img>
+      <Popup className="CartPopup"
+        key={"bottom center"}
+        trigger={
+          <img
+            type="button"
+            className="d"
+            src={require(`../imgs/empty-cart.png`)}
+            alt="burger-menu"
+            width={30}
+            height={30}
+          ></img>
+        }
+        modal
+        nested
+      >
+        {(close) => (
+          <div className="modal">
+            <button className="close" onClick={close}>
+              &times;
+            </button>
+            <CartPoup />
+          </div>
+        )}
+      </Popup>
     </div>
     {/*<i className=" fa-solid fa-bars" width="50" height="50"></i>*/}
   </div>
@@ -99,7 +116,6 @@ function Des2() {
     </div>
   );
 }
-
 
 const Horario = (props) => (
   <div>

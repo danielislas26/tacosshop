@@ -1,11 +1,13 @@
-import React from 'react';
-
+import { React,useContext } from "react";
+import { CartContext } from "../../CartContext";
 import Casquillo from '../Casquillo';
 import Conteo from '../Conteo';
 import { Header } from '../Header';
 
 
 const Carrito = () => {
+    const cart = useContext(CartContext);
+    console.log(cart.items)
     return(
         <>
             <div className='Carrito-plantilla'>

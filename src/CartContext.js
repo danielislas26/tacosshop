@@ -48,6 +48,7 @@ export function CartProvider({children}) {
                     {   
                         id: obj.id,
                         subid: obj.subid,
+                        title: obj.title,
                         quantity: 1
                     }
                 ]
@@ -100,8 +101,8 @@ export function CartProvider({children}) {
     function getTotalCost() {
         let totalCost = 0;
         cartProducts.map((cartItem) => {
-            const productData = getProductData(cartItem.id);
-            totalCost += (productData.price * cartItem.quantity);
+            const productData = getProductData(cartItem.subid);
+            totalCost += (productData.precio * cartItem.quantity);
         });
         return totalCost;
     }

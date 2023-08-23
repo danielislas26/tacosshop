@@ -827,6 +827,7 @@ label {
 }
 
 .popup-overlay {
+  overflow-y: auto;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -1301,4 +1302,45 @@ label {
 
 .info-container > div {
   padding-bottom: 30px;
+}
+
+.Modal-Header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.Modal-Header > p {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  color: #2C5B89;
+}
+
+.Modal-Body-Conteo {
+  padding: 0 0 10px 10px;
+}
+
+.Modal-Body-Conteo > h2 {
+  color: black;
+}
+
+.Modal-Body > p {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Product-Container > h3 {
+  color: black;
+  margin: 10px 0 10px 0;
+}
+
+.Product-Container {
+  margin: 10px;
+}
+
+.Products-Cart-Container {
+  height: 150px;
+  overflow-y: auto;
 }/*# sourceMappingURL=app.css.map */
