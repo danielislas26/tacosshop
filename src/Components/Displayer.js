@@ -1,6 +1,8 @@
 import { React,useContext } from "react";
 import Popup from "reactjs-popup";
 import Mob from "./Item";
+import { getProductDataMain } from "./productsStore";
+
 
 import "../scss/app.css";
 
@@ -9,9 +11,10 @@ import { CartContext } from "../CartContext";
 function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0);
-  //const cantidad = cart.getItemQuantity(id)
-  const cantidad = cart.getItemQuantity(id)
   
+  const cantidad = cart.getItemQuantity(id)
+  const productData = getProductDataMain(id);
+  const subtotal = cart.drenado(id)
   
   return (
     
@@ -111,7 +114,7 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
                     <p>{cantidad}</p>
                   </div>
                   <div>
-                    <p>$250</p>
+                   <p>${subtotal}</p>
                   </div>
                 </div>
               </div>

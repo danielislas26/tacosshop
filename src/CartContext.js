@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
-import { getProductData,productsArray } from "./Components/productsStore";
+import { getProductData} from "./Components/productsStore";
+import { types } from "./Components/productsStore";
 
 
 
@@ -8,7 +9,7 @@ export const CartContext = createContext({
     getProductQuantity: () => {},
     getItemQuantity: () => {},
     addOneToCart: () => {},
-    filter: () => {},
+    drenado: () => {},
     removeOneFromCart: () => {},
     deleteFromCart: () => {},
     getTotalCost: () => {}
@@ -107,6 +108,21 @@ export function CartProvider({children}) {
         return totalCost;
     }
 
+    function drenado(id) {
+        let pricesArr = [];
+        let arr = cartProducts.filter((platillo) => platillo.id === id);
+        arr.map((item, i) => {
+          let c = types.find((plato) => plato.subid === item.subid);
+          pricesArr.push(c.precio * item.quantity);
+        });
+      
+        let result = pricesArr.reduce((a, b) => {
+          return a + b;
+        }, 0);
+      
+        return result;
+      }
+
     const contextValue = {
         items: cartProducts,
         getProductQuantity,
@@ -114,6 +130,7 @@ export function CartProvider({children}) {
         addOneToCart,
         removeOneFromCart,
         deleteFromCart,
+        drenado,
         getTotalCost
     }
 

@@ -4,7 +4,7 @@ import { CartContext } from "../CartContext";
 
 
 const Mob = ({types}) => {
-  const product = types;
+  
   const cart = useContext(CartContext);
 //  let tipos = props.Tipo.map((o)=>{ return o.id})
   
