@@ -41,48 +41,93 @@ export function CartProvider({children}) {
     function addOneToCart(obj) {
 
         const quantity = getProductQuantity(obj.subid);
-
-        if (quantity === 0) { // product is not in cart
-            setCartProducts(
-                [
-                    ...cartProducts,
-                    {   
-                        id: obj.id,
-                        subid: obj.subid,
-                        title: obj.title,
-                        quantity: 1
-                    }
-                ]
-            )
-        } else { // product is in cart
-            // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]    add to product id of 2
-            setCartProducts(
-                cartProducts.map(
-                    product =>
-                    product.subid === obj.subid                              // if condition
-                    ? { ...product, quantity: product.quantity + 1 } // if statement is true
-                    : product                                        // if statement is false
+        if( obj.id !== 3 ) {
+            if ( quantity === 0 ) {
+                setCartProducts(
+                    [
+                        ...cartProducts,
+                        {   
+                            id: obj.id,
+                            subid: obj.subid,
+                            title: obj.title,
+                            quantity: 1
+                        }
+                    ]
                 )
-            )
+            } else {
+                setCartProducts(
+                    cartProducts.map(
+                        product =>
+                        product.subid === obj.subid                              // if condition
+                        ? { ...product, quantity: product.quantity + 1 } // if statement is true
+                        : product                                        // if statement is false
+                    )
+                )
+            }
+
+        } else {
+            if ( quantity === 0 ) {
+                setCartProducts(
+                    [
+                        ...cartProducts,
+                        {   
+                            id: obj.id,
+                            subid: obj.subid,
+                            title: obj.title,
+                            quantity: 1/4
+                        }
+                    ]
+                )
+            } else {
+                setCartProducts(
+                    cartProducts.map(
+                        product =>
+                        product.subid === obj.subid                              // if condition
+                        ? { ...product, quantity: product.quantity + 1/4 } // if statement is true
+                        : product                                        // if statement is false
+                    )
+                )
+            }
         }
+
+        
+
+        
     }
 
     function removeOneFromCart(obj) {
         const quantity = getProductQuantity(obj.subid);
-
-        if(quantity == 1) {
-            deleteFromCart(obj.subid);
-        } else {
-            setCartProducts(
-                cartProducts.map(
-                    product =>
-                    // product.id es el id del producto añadido al carrito
-                    product.subid === obj.subid                                // if condition
-                    ? { ...product, quantity: product.quantity - 1 } // if statement is true
-                    : product                                        // if statement is false
+        if( obj.id !==3 ) {
+            if( quantity === 1 ) {
+                deleteFromCart(obj.subid);
+            } else {
+                setCartProducts(
+                    cartProducts.map(
+                        product =>
+                        // product.id es el id del producto añadido al carrito
+                        product.subid === obj.subid                                // if condition
+                        ? { ...product, quantity: product.quantity - 1 } // if statement is true
+                        : product                                        // if statement is false
+                    )
                 )
-            )
+            }
+
+        } else {
+            if(quantity === 1/4) {
+                deleteFromCart(obj.subid);
+            } else {
+                setCartProducts(
+                    cartProducts.map(
+                        product =>
+                        // product.id es el id del producto añadido al carrito
+                        product.subid === obj.subid                                // if condition
+                        ? { ...product, quantity: product.quantity - 1/4 } // if statement is true
+                        : product                                        // if statement is false
+                    )
+                )
+            }
         }
+        
     }
 
 

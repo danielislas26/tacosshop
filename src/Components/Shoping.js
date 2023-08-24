@@ -33,7 +33,7 @@ function CartPoup() {
               ))}
             </div>
             <div className="Modal-Body-Conteo">
-              <h2>Total: {cart.getTotalCost().toFixed(2)}</h2>
+              <h2>Total: ${cart.getTotalCost().toFixed(2)}</h2>
               <button>Comprar!</button>
             </div>
           </>

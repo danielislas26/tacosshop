@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Popup from "reactjs-popup";
 import { CartPoup } from "./Shoping";
 import "../scss/app.css";
+import { CartContext } from "../CartContext";
 
 class Header extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Header extends React.Component {
       estado: this.Estado,
     };
   }
-
+  
   render() {
     if (this.props.Estado === true) {
       return <Des />;
@@ -22,8 +23,11 @@ class Header extends React.Component {
   }
 }
 
-const Des = (props) => (
-  <div className="Header-container">
+const Des = (props) => {
+  const cart = useContext(CartContext);
+  const productsCount = cart.items.length;
+  
+ return ( <div className="Header-container">
     <div className="Icon-container">
       <div className="example-warper">
         <Popup
@@ -59,17 +63,24 @@ const Des = (props) => (
       {/*<img src={require("../imgs/babo-strech.png")} alt="los paquis logo" width={35} height={50}></img>*/}
     </div>
     <div className="Icon-container">
+     
       <Popup className="CartPopup"
         key={"bottom center"}
         trigger={
-          <img
+          <div>
+            <div className="Items-Counter">
+              <div className="Counter-Container"><p>{productsCount}</p></div>
+            </div>
+            <img
             type="button"
             className="d"
-            src={require(`../imgs/empty-cart.png`)}
+            src={require(`../imgs/NewEmpty.png`)}
             alt="burger-menu"
-            width={30}
-            height={30}
+            width={38}
+            height={38}
           ></img>
+
+          </div>
         }
         modal
         nested
@@ -85,8 +96,8 @@ const Des = (props) => (
       </Popup>
     </div>
     {/*<i className=" fa-solid fa-bars" width="50" height="50"></i>*/}
-  </div>
-);
+  </div>)
+};
 
 function Des2() {
   const navigate = useNavigate();

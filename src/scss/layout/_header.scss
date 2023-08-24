@@ -33,6 +33,33 @@
 
 }
 
+.Items-Counter{
+    display: flex;
+    position: absolute;    
+    border-radius: 100%;
+}
+
+
+
+.Counter-Container{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a9d8f;
+    border-radius: 100%;
+    margin-left: 25px;
+    
+}
+
+.Counter-Container > p {
+    font-family: "Poppins";
+    padding-top: 1px;
+    color: white;
+
+}
+
 
 
 

@@ -378,6 +378,29 @@ label {
   cursor: pointer;
 }
 
+.Items-Counter {
+  display: flex;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.Counter-Container {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a9d8f;
+  border-radius: 100%;
+  margin-left: 25px;
+}
+
+.Counter-Container > p {
+  font-family: "Poppins";
+  padding-top: 1px;
+  color: white;
+}
+
 .Holder-container {
   display: flex;
   flex-direction: column;
@@ -1307,28 +1330,34 @@ label {
 .Modal-Header {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #1A3D5F;
 }
 
 .Modal-Header > p {
   font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.25px;
-  color: #2C5B89;
+  font-size: 21px;
+  letter-spacing: 0.2px;
+  color: #122C45;
+  font-family: "Lora";
 }
 
 .Modal-Body-Conteo {
+  background: #1A3D5F;
   padding: 0 0 10px 10px;
+  padding-top: 15px;
+  border-radius: 0 0 5px 5px;
 }
 
 .Modal-Body-Conteo > h2 {
-  color: black;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .Modal-Body > p {
   margin-left: 15px;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Signika";
 }
 
 .Product-Container > h3 {
@@ -1338,6 +1367,11 @@ label {
 
 .Product-Container {
   margin: 10px;
+}
+
+.Product-Container > p {
+  font-family: "Poppins";
+  font-size: 16px;
 }
 
 .Products-Cart-Container {
