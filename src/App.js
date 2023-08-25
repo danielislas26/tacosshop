@@ -3,7 +3,7 @@ import './scss/app.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Carrito from "./Components/pages/carrito";
 import Home from "./Components/pages/Home";
-import Succed from "./Components/pages/Succed";
+import Succed from "./Components/pages/Success";
 
 function App() {
   return (

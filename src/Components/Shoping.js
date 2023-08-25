@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
-import { CardProduct } from "./CardProducts";
 import CartProduct from "./CartProduct";
 
 function CartPoup() {
@@ -9,6 +8,21 @@ function CartPoup() {
     (sum, product) => sum + product.quantity,
     0
   );
+  const checkout = async () => {
+    await fetch('http://localhost:4000/checkout', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({items: cart.items})
+    }).then((response) => {
+      return response.json();
+    }).then((response) => {
+      if(response.url) {
+        window.location.assign(response.url);
+      }
+    })
+  }
   return (
     <>
       <div className="Modal-Header">
@@ -34,7 +48,7 @@ function CartPoup() {
             </div>
             <div className="Modal-Body-Conteo">
               <h2>Total: ${cart.getTotalCost().toFixed(2)}</h2>
-              <button>Comprar!</button>
+              <button onClick={checkout}>Comprar!</button>
             </div>
           </>
         ) : (

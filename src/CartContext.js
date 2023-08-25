@@ -47,6 +47,7 @@ export function CartProvider({children}) {
                     [
                         ...cartProducts,
                         {   
+                            slink: obj.slink,
                             id: obj.id,
                             subid: obj.subid,
                             title: obj.title,

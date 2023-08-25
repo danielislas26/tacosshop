@@ -97,12 +97,14 @@ const comida = [
     description: "Delicioso Consome de Borrego con arroz y garbanzo",
     tipos: [
       {
+        slink: "price_1Nj0lEH329Hy6dQiS21Ewzg6",
         id: 1,
         subid: 1,
         title: "1/2 Litro",
         precio: 30,
       },
       {
+        slink: "price_1Nj0rOH329Hy6dQi1OAUbb2n",
         id: 1,
         subid: 2,
         title: "1 Litro",
@@ -119,57 +121,66 @@ const comida = [
       "Delicioso taco con barbacoa recien salida del horno sobre dos tortilla de maiz",
     tipos: [
       {
+        slink:"price_1Nj0s8H329Hy6dQiD22OIoFK",
         id: 2,
         subid: 3,
         title: "Campechano",
         precio: 30,
       },
       {
+        slink: "price_1Nj4BBH329Hy6dQixKrRZ64F",
         id: 2,
         subid: 4,
         title: "Costilla",
         precio: 30,
       },
       {
+        slink: "price_1Nj4G9H329Hy6dQiZwuGWacC",
         id: 2,
         subid: 5,
         title: "Espaldilla",
         precio: 30,
       },
       {
+        slink: "price_1Nj4GlH329Hy6dQie3TDPjsv",
         id: 2,
         subid: 6,
         title: "Falda",
         precio: 30,
       },
       {
+        slink: "price_1Nj4HrH329Hy6dQiBER6d9ib",
         id: 2,
         subid: 7,
         title: "Lomo",
         precio: 30,
       },
       {
+        slink: "price_1Nj4J3H329Hy6dQiIlUZfC7i",
         id: 2,
         subid: 8,
         title: "Maciza",
         precio: 30,
       },
       {
+        slink: "price_1Nj4KAH329Hy6dQibFVyCR4i",
         id: 2,
         subid: 9,
         title: "Panza",
         precio: 30,
       },
       {
+        slink: "price_1Nj4L2H329Hy6dQijVyITa12",
         id: 2,
         subid: 10,
         title: "Pescuezo",
         precio: 30,
       },
       {
+        slink: "price_1Nj4LrH329Hy6dQinEr799p9",
         id: 2,
         subid: 11,
-        title: "Surtido",
+        title: "Surtida",
         precio: 30,
       },
     ],
@@ -182,12 +193,12 @@ const comida = [
     description:
       "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
-      { id: 3, subid: 12, title: "Costilla", precio: 500 },
-      { id: 3, subid: 13, title: "Espaldilla", precio: 500 },
-      { id: 3, subid: 14, title: "Falda", precio: 500 },
-      { id: 3, subid: 15, title: "Lomo", precio: 500 },
-      { id: 3, subid: 16, title: "Maciza", precio: 500 },
-      { id: 3, subid: 17, title: "Pescuezo", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 12, title: "Costilla", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 13, title: "Espaldilla", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 14, title: "Falda", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 15, title: "Lomo", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 16, title: "Maciza", precio: 500 },
+      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 17, title: "Surtida", precio: 500 },
     ],
   },
 ];
@@ -211,6 +222,22 @@ const types = [
   { id: 3, subid: 16, title: "Kilo", tipo: "Maciza", precio: 500 },
   { id: 3, subid: 17, title: "Kilo", tipo: "Pescuezo", precio: 500 },
 ];
+
+const kilos = [
+  {
+    peso: "kilo",
+    precio: 500
+  },
+  {
+    peso: "medio",
+    precio: 250
+  },
+  {
+    peso: "Cuarto",
+    precio: 125
+  }
+
+]
 
 const kart = [
   { id: 1, subid: 1, quantity: 2 },
