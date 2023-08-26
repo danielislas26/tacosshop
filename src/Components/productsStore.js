@@ -187,18 +187,50 @@ const comida = [
   },
   {
     id: 3,
-    title: "kilos",
+    title: "kilo de Barbacoa",
     price: 500,
     score: 89,
     description:
       "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
       { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 12, title: "Costilla", precio: 500 },
-      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 13, title: "Espaldilla", precio: 500 },
-      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 14, title: "Falda", precio: 500 },
-      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 15, title: "Lomo", precio: 500 },
-      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 16, title: "Maciza", precio: 500 },
-      { slink:"price_1Nj0vAH329Hy6dQitIrYvwCW", id: 3, subid: 17, title: "Surtida", precio: 500 },
+      { slink:"price_1Nj9wcH329Hy6dQidp0bbH24", id: 3, subid: 13, title: "Espaldilla", precio: 500 },
+      { slink:"price_1Nj9zmH329Hy6dQi8Jv6fipt", id: 3, subid: 14, title: "Falda", precio: 500 },
+      { slink:"price_1NjA0KH329Hy6dQitIIxHcbP", id: 3, subid: 15, title: "Lomo", precio: 500 },
+      { slink:"price_1NjA1wH329Hy6dQifySG5Qpc", id: 3, subid: 16, title: "Maciza", precio: 500 },
+      { slink:"price_1NjA2nH329Hy6dQi9q8Bd8LV", id: 3, subid: 17, title: "Surtida", precio: 500 },
+    ],
+  },
+  {
+    id: 4,
+    title: "Medio de Barbacoa",
+    price: 250,
+    score: 63,
+    description:
+      "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
+    tipos: [
+      { slink:"price_1NjA46H329Hy6dQi9f5ZoDB6", id: 4, subid: 18, title: "Costilla", precio: 250 },
+      { slink:"price_1NjA5HH329Hy6dQisqeUGmiC", id: 4, subid: 19, title: "Espaldilla", precio: 250 },
+      { slink:"price_1NjA5pH329Hy6dQiJ7RSURGq", id: 4, subid: 20, title: "Falda", precio: 250 },
+      { slink:"price_1NjA6mH329Hy6dQitFTHRmhk", id: 4, subid: 21, title: "Lomo", precio: 250 },
+      { slink:"price_1NjA7kH329Hy6dQiYsncMp49", id: 4, subid: 22, title: "Maciza", precio: 250 },
+      { slink:"price_1NjA9eH329Hy6dQiMUdnzm0q", id: 4, subid: 23, title: "Surtida", precio: 250 },
+    ],
+  },
+  {
+    id: 5,
+    title: "Cuarto de Barbacoa",
+    price: 125,
+    score: 50,
+    description:
+      "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
+    tipos: [
+      { slink:"price_1NjAB8H329Hy6dQi3QtVcpp8", id: 5, subid: 24, title: "Costilla", precio: 125 },
+      { slink:"price_1NjACIH329Hy6dQirWFBrtZX", id: 5, subid: 25, title: "Espaldilla", precio: 125 },
+      { slink:"price_1NjACqH329Hy6dQi8bRwTCTc", id: 5, subid: 26, title: "Falda", precio: 125 },
+      { slink:"price_1NjADIH329Hy6dQi1AZPENqW", id: 5, subid: 27, title: "Lomo", precio: 125 },
+      { slink:"price_1NjAE3H329Hy6dQihnPN4sgQ", id: 5, subid: 28, title: "Maciza", precio: 125 },
+      { slink:"price_1NjAElH329Hy6dQigTNMV59p", id: 5, subid: 29, title: "Surtida", precio: 125 },
     ],
   },
 ];
@@ -221,6 +253,18 @@ const types = [
   { id: 3, subid: 15, title: "Kilo", tipo: "Lomo", precio: 500 },
   { id: 3, subid: 16, title: "Kilo", tipo: "Maciza", precio: 500 },
   { id: 3, subid: 17, title: "Kilo", tipo: "Pescuezo", precio: 500 },
+  { id: 4, subid: 18, title: "Medio", tipo: "Costilla", precio: 250 },
+  { id: 4, subid: 19, title: "Medio", tipo: "Espaldilla", precio: 250 },
+  { id: 4, subid: 20, title: "Medio", tipo: "Falda", precio: 250 },
+  { id: 4, subid: 21, title: "Medio", tipo: "Lomo", precio: 250 },
+  { id: 4, subid: 22, title: "Medio", tipo: "Maciza", precio: 250 },
+  { id: 4, subid: 23, title: "Medio", tipo: "Pescuezo", precio: 250 },
+  { id: 5, subid: 24, title: "Cuarto", tipo: "Costilla", precio: 125 },
+  { id: 5, subid: 25, title: "Cuarto", tipo: "Espaldilla", precio: 125 },
+  { id: 5, subid: 26, title: "Cuarto", tipo: "Falda", precio: 125 },
+  { id: 5, subid: 27, title: "Cuarto", tipo: "Lomo", precio: 125 },
+  { id: 5, subid: 28, title: "Cuarto", tipo: "Maciza", precio: 125 },
+  { id: 5, subid: 29, title: "Cuarto", tipo: "Pescuezo", precio: 125 },
 ];
 
 const kilos = [
@@ -236,7 +280,6 @@ const kilos = [
     peso: "Cuarto",
     precio: 125
   }
-
 ]
 
 const kart = [
