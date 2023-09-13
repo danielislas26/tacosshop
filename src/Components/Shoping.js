@@ -52,7 +52,7 @@ function CartPoup() {
             </div>
           </>
         ) : (
-          <h2>There are no items in your cart</h2>
+          <h2 className="void-cart">No hay productos en tu carrtito...</h2>
         )}
       </div>
     </>

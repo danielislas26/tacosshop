@@ -17,6 +17,7 @@ export default function Store() {
           puntuacion={product.score}
           descripcion={product.description}
           tipos={product.tipos}
+          img={product.img}
         />
       ))}
     </div>

@@ -345,6 +345,7 @@ label {
 }
 
 .Header-container {
+  z-index: 3;
   background-color: #1A3D5F;
   width: 100%;
   height: 63px;
@@ -358,6 +359,12 @@ label {
   .Header-container {
     height: 96px;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .Icon-container {
@@ -432,11 +439,16 @@ label {
 }
 
 .Holder-container-img {
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
+}
+
+.descuento {
+  padding-bottom: 5px;
 }
 
 .imgContainer {
@@ -455,7 +467,7 @@ label {
 .imagen {
   margin-top: 15px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .imagen {
@@ -548,6 +560,25 @@ label {
   }
 }
 
+.Card-img-Container-Text {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-img-Container-Text-icon {
+  padding-right: 3px;
+}
+
+.puntuacion {
+  letter-spacing: 0.1px;
+  font-weight: 800;
+}
+
 .Card {
   width: 320px;
   height: 229px;
@@ -563,8 +594,9 @@ label {
 .Card-img-Container {
   width: auto;
   height: auto;
-  background: #D9D9D9;
+  background-size: cover;
   border-radius: 6px 6px 0px 0px;
+  box-shadow: inset 0 40px 55px -5px rgba(0, 0, 0, 0.8);
 }
 
 .Card-Text-Container {
@@ -617,6 +649,12 @@ label {
 
 .Card-Text {
   width: 295px;
+  padding-top: 10px;
+  font-family: "Lora";
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  letter-spacing: 0.25px;
 }
 
 .Mapa {
@@ -755,6 +793,21 @@ label {
   .subText-Container {
     justify-content: flex-start;
   }
+}
+
+.subText-Container-icons > img {
+  padding-right: 15px;
+}
+
+.subText-Container-icons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.subTextIcon {
+  font-family: "Lora";
+  font-size: 16px;
 }
 
 .TextoContainer {
@@ -963,6 +1016,11 @@ label {
   background-color: #1A3D5F;
   border: none;
   width: 80px;
+}
+
+.void-cart {
+  color: black;
+  margin-left: 8px;
 }
 
 [role=tooltip].popup-content {
@@ -1377,4 +1435,90 @@ label {
 .Products-Cart-Container {
   height: 150px;
   overflow-y: auto;
+}
+
+.imagen-container {
+  width: 100%;
+  height: 357px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-container > img {
+  border: 5px solid #1A3D5F;
+  border-radius: 10px;
+}
+
+.cancel-leyend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel-leyend {
+  color: black;
+  width: 90%;
+}
+
+.cancel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel-text {
+  width: 300px;
+  color: black;
+}
+
+.cancel-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Instrucciones-Container {
+  background-color: #1A3D5F;
+}
+
+.Pasos-Titulo-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+}
+
+.Pasos-Titulo-Container > h3 {
+  width: 210px;
+  font-family: "Lora";
+  text-align: center;
+}
+
+.Pasos-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+}
+
+.Paso-Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Paso-Container > p {
+  font-family: "Lora";
+  font-size: 18px;
+  font-weight: 700;
+  color: #2C5B89;
+}
+
+.Paso-number {
+  padding-right: 15px;
+}
+
+.Paso-Texto {
+  width: 265px;
+  height: auto;
 }/*# sourceMappingURL=app.css.map */

@@ -124,6 +124,24 @@ align-items: center;
     }
 }
 
+.subText-Container-icons > img {
+
+ padding-right: 15px;
+}
+
+.subText-Container-icons {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.subTextIcon{
+    font-family: 'Lora';
+    font-size: 16px;
+}
+
+
+
 .TextoContainer{
     display: flex;
     flex-direction: column;

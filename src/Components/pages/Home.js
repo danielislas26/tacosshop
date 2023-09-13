@@ -4,6 +4,7 @@ import { Header } from "../Header";
 import { Holder, Anuncio } from "../Holder";
 import SideBar from "../Sidebar";
 import Mapa from "../About";
+import { Instrucciones } from "../Instrucciones";
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       <Holder />
       <Anuncio />
       <SideBar />
+      <Instrucciones />
       <Mapa />
     </React.StrictMode>
   );

@@ -1,4 +1,4 @@
-import React, { useState,useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Popup from "reactjs-popup";
@@ -13,7 +13,7 @@ class Header extends React.Component {
       estado: this.Estado,
     };
   }
-  
+
   render() {
     if (this.props.Estado === true) {
       return <Des />;
@@ -27,76 +27,107 @@ const Des = (props) => {
   const cart = useContext(CartContext);
   const productsCount = cart.items.length;
   
- return ( <div className="Header-container">
-    <div className="Icon-container">
-      <div className="example-warper">
+   
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', myFunction());
+
+    let header = document.getElementById("myHeader");
+    let sticky = header.offsetTop;
+    console.log(sticky)
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  })
+
+ 
+ /* const sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }*/
+
+  return (
+    <div className="Header-container sticky" id="myHeader">
+      <div className="Icon-container">
+        <div className="example-warper">
+          <Popup
+            key={"bottom center"}
+            trigger={
+              <button type="button" className="button">
+                <img
+                  type="button"
+                  className="butoon"
+                  src={require(`../imgs/menu-burger.png`)}
+                  alt="burger-menu"
+                  width={30}
+                  height={30}
+                ></img>
+              </button>
+            }
+            position="bottom left"
+            on={["hover", "focus"]}
+            arrow={"bottom left" !== "center center"}
+          >
+            <ul className="Toolbar">
+              <div className="Section">
+                <p>° Contacto</p>
+              </div>
+              <div className="Section">
+                <p>° Horario</p>
+              </div>
+            </ul>
+          </Popup>
+        </div>
+      </div>
+      <div className="Icon-container">
+        {/*<img src={require("../imgs/babo-strech.png")} alt="los paquis logo" width={35} height={50}></img>*/}
+      </div>
+      <div className="Icon-container">
         <Popup
+          className="CartPopup"
           key={"bottom center"}
           trigger={
-            <button type="button" className="button">
+            <div>
+              <div className="Items-Counter">
+                <div className="Counter-Container">
+                  <p>{productsCount}</p>
+                </div>
+              </div>
               <img
                 type="button"
-                className="butoon"
-                src={require(`../imgs/menu-burger.png`)}
+                className="d"
+                src={require(`../imgs/NewEmpty.png`)}
                 alt="burger-menu"
-                width={30}
-                height={30}
+                width={38}
+                height={38}
               ></img>
-            </button>
+            </div>
           }
-          position="bottom left"
-          on={["hover", "focus"]}
-          arrow={"bottom left" !== "center center"}
+          modal
+          nested
         >
-          <ul className="Toolbar">
-            <div className="Section">
-              <p>° Contacto</p>
+          {(close) => (
+            <div className="modal">
+              <button className="close" onClick={close}>
+                &times;
+              </button>
+              <CartPoup />
             </div>
-            <div className="Section">
-              <p>° Horario</p>
-            </div>
-          </ul>
+          )}
         </Popup>
       </div>
+      {/*<i className=" fa-solid fa-bars" width="50" height="50"></i>*/}
     </div>
-    <div className="Icon-container">
-      {/*<img src={require("../imgs/babo-strech.png")} alt="los paquis logo" width={35} height={50}></img>*/}
-    </div>
-    <div className="Icon-container">
-     
-      <Popup className="CartPopup"
-        key={"bottom center"}
-        trigger={
-          <div>
-            <div className="Items-Counter">
-              <div className="Counter-Container"><p>{productsCount}</p></div>
-            </div>
-            <img
-            type="button"
-            className="d"
-            src={require(`../imgs/NewEmpty.png`)}
-            alt="burger-menu"
-            width={38}
-            height={38}
-          ></img>
-
-          </div>
-        }
-        modal
-        nested
-      >
-        {(close) => (
-          <div className="modal">
-            <button className="close" onClick={close}>
-              &times;
-            </button>
-            <CartPoup />
-          </div>
-        )}
-      </Popup>
-    </div>
-    {/*<i className=" fa-solid fa-bars" width="50" height="50"></i>*/}
-  </div>)
+  );
 };
 
 function Des2() {

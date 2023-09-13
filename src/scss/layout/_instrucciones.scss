@@ -1,0 +1,46 @@
+.Instrucciones-Container{
+    background-color: #1A3D5F;
+}
+
+.Pasos-Titulo-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    
+}
+
+.Pasos-Titulo-Container > h3 {
+    width: 210px;
+    font-family: 'Lora';
+    text-align: center;
+}
+
+.Pasos-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.Paso-Container{
+    display: flex;
+    flex-direction: row;
+}
+
+.Paso-Container > p {
+    font-family: 'Lora';
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C5B89;
+}
+
+.Paso-number{
+    padding-right: 15px;
+}
+
+.Paso-Texto{
+ width: 265px;
+ height: auto;
+}

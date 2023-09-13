@@ -8,14 +8,14 @@ import "../scss/app.css";
 
 import { CartContext } from "../CartContext";
 
-function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
+function Barra({platillo,puntuacion,precio,descripcion,tipos,id,img}) {
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce((sum,product) => sum + product.quantity, 0);
-  
+
   const cantidad = cart.getItemQuantity(id)
   const productData = getProductDataMain(id);
   const subtotal = cart.drenado(id)
-  
+  console.log(img)
   return (
     
     <div
@@ -31,22 +31,22 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
         </button>
       }
     >
-      <div className="Card-img-Container">
+      <div style={{ backgroundImage: `url(${img})`}} className="Card-img-Container">
         <div className="Card-imgandText">
-          <label className="Card-img-Container-Text l1-s">
+          <label className="Card-img-Container-Text">
             {platillo}
           </label>
     
           <div className="Card-img-Container-Text">
             <img
               className="Card-img-Container-Text-icon"
-              src={require("../imgs/estrella.png")}
+              src={require("../imgs/price2.png")}
               alt="star-icon"
-              width={22}
-              height={22}
+              width={13}
+              height={23}
             ></img>
-            <label className="Card-img-Text-Container-Text-Text l1-s">
-              {puntuacion}
+            <label className="Card-img-Text-Container-Text puntuacion">
+              {precio}
             </label>
           </div>
         </div>
@@ -63,7 +63,7 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos,id}) {
         </div>
       </div>
       <div className="Card-Text-Container">
-        <label className="Card-Text l3-s">{descripcion}</label>
+        <label className="Card-Text">{descripcion}</label>
         <Popup
           trigger={
             <button className="button button-dots">
