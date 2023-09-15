@@ -20,7 +20,7 @@ const Mob = ({types}) => {
      return types.map((tipo) => {
         const productQuantity = cart.getProductQuantity(tipo.subid)
         return (
-        <div className="menu-item" >
+        <div className="menu-item" key={tipo.subid} >
           <p>{tipo.title}</p>
           <div className="arrows-container">
             <button onClick={()=> cart.addOneToCart(tipo)}>

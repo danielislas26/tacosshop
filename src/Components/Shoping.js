@@ -2,12 +2,40 @@ import React, { useContext } from "react";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
+const dt = new Date()
+const day = dt.getDay()
+
+function toDayDiscount(total){
+
+ if(day <= 3 && total >= 360){
+  return total*0.90
+ } else if ( day > 3 && total >= 360 ) {
+  return total*0.95
+ } else {
+  return total
+ }
+
+}
+
+function able (day){
+  if(day < 6){
+    return true
+  } else {
+    return false
+  }
+}
+
+
+
+
 function CartPoup() {
+
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce(
     (sum, product) => sum + product.quantity,
     0
   );
+
   const checkout = async () => {
     await fetch('http://localhost:4000/checkout', {
       method: "POST",
@@ -47,8 +75,10 @@ function CartPoup() {
               ))}
             </div>
             <div className="Modal-Body-Conteo">
-              <h2>Total: ${cart.getTotalCost().toFixed(2)}</h2>
-              <button onClick={checkout}>Comprar!</button>
+              <h2 className="total">${cart.getTotalCost().toFixed(2)}</h2>
+              <h3 className="discount">-${(cart.getTotalCost().toFixed(2)-toDayDiscount(cart.getTotalCost().toFixed(2))).toFixed(2)}</h3>
+              <h2>Total: ${toDayDiscount(cart.getTotalCost().toFixed(2))}</h2>
+              <button  onClick={checkout} disabled={able()}>Comprar!</button>
             </div>
           </>
         ) : (

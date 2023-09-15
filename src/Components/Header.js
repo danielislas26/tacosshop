@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext,useRef } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Popup from "reactjs-popup";
@@ -23,10 +23,13 @@ class Header extends React.Component {
   }
 }
 
+
+
+
 const Des = (props) => {
   const cart = useContext(CartContext);
   const productsCount = cart.items.length;
-  
+ 
    
   
   document.addEventListener('DOMContentLoaded', function() {
@@ -79,10 +82,10 @@ const Des = (props) => {
           >
             <ul className="Toolbar">
               <div className="Section">
-                <p>° Contacto</p>
+                <p>Contacto</p>
               </div>
               <div className="Section">
-                <p>° Horario</p>
+                <p>Horario</p>
               </div>
             </ul>
           </Popup>

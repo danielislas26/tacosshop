@@ -25,10 +25,10 @@ const Anuncio = (props) => (
       <h2>-- Solo Pickup --</h2>
       <h3 className="h3">!!Abierto solo los Domingos de 8:30 a 1:30!!</h3>
       <label className="l1-s descuento">
-        Obten 10% de descuento en tu compra ordenando de lunes a miercoles 
+        Obten 10% de descuento en tu compra ordenando de lunes a miercoles comprando a partir de $350 
       </label>
       <label className="l1-s descuento">
-        Obten 5% de descuento en tu compra ordenando de jueves a viernes 
+        Obten 5% de descuento en tu compra ordenando de jueves a viernes comprando a partir de $350
       </label>
     </div>
   </div>

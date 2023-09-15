@@ -1411,6 +1411,17 @@ label {
   margin-bottom: 10px;
 }
 
+.discount {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.total {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-size: 20px;
+}
+
 .Modal-Body > p {
   margin-left: 15px;
   font-size: 16px;
