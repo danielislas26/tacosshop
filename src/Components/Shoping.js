@@ -7,9 +7,9 @@ const day = dt.getDay()
 
 function toDayDiscount(total){
 
- if(day <= 3 && total >= 360){
+ if(day <= 3 && total >= 350){
   return total*0.90
- } else if ( day > 3 && total >= 360 ) {
+ } else if ( day > 3 && total >= 350 ) {
   return total*0.95
  } else {
   return total
