@@ -15,7 +15,8 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos,id,img}) {
   const cantidad = cart.getItemQuantity(id)
   const productData = getProductDataMain(id);
   const subtotal = cart.drenado(id)
-  console.log(img)
+
+  
   return (
     
     <div
@@ -84,7 +85,7 @@ function Barra({platillo,puntuacion,precio,descripcion,tipos,id,img}) {
                 &times;
               </button>
               <div className="header"> {platillo} </div>
-              <div className="content">
+              <div className="content" id="popupcontent">
                 {" "}
                 { 
                   <Mob

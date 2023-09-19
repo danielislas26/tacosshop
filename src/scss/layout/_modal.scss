@@ -33,6 +33,11 @@
     
     
   }
+
+  .content{
+    height: auto;
+    overflow-y: auto;
+  }
   .modal > .actions {
     width: 100%;
     margin: auto;
@@ -114,7 +119,12 @@
   }
 
   .cantidad {
+    
     font-size: 18px;
+  }
+  .cantidad > p {
+    margin-top: 3px ;
+    margin-bottom: 5px;
   }
 
   .button-cart{

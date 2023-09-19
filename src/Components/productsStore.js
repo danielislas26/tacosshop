@@ -235,7 +235,8 @@ const comida = [
       { slink:"price_1NkyDZH329Hy6dQiAbC7ZkDV", id: 5, subid: 26, title: "Falda", precio: 125 },
       { slink:"price_1NkyEKH329Hy6dQibpoFpVBh", id: 5, subid: 27, title: "Lomo", precio: 125 },
       { slink:"price_1NkyF2H329Hy6dQijCSglT6m", id: 5, subid: 28, title: "Maciza", precio: 125 },
-      { slink:"price_1NkyFrH329Hy6dQi8ZHGY4Sl", id: 5, subid: 29, title: "Surtida", precio: 125 },
+      { slink:"price_1Nqm7AH329Hy6dQiyvAsdupE", id: 5, subid: 29, title: "Panza", precio: 125 },
+      { slink:"price_1NkyFrH329Hy6dQi8ZHGY4Sl", id: 5, subid: 30, title: "Surtida", precio: 125 },
     ],
   },
 ];
@@ -269,7 +270,8 @@ const types = [
   { id: 5, subid: 26, title: "Cuarto", tipo: "Falda", precio: 125 },
   { id: 5, subid: 27, title: "Cuarto", tipo: "Lomo", precio: 125 },
   { id: 5, subid: 28, title: "Cuarto", tipo: "Maciza", precio: 125 },
-  { id: 5, subid: 29, title: "Cuarto", tipo: "Pescuezo", precio: 125 },
+  { id: 5, subid: 29, title: "Panza",  tipo: "Panza", precio: 125 },
+  { id: 5, subid: 30, title: "Cuarto", tipo: "Pescuezo", precio: 125 },
 ];
 
 const kilos = [

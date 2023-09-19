@@ -366,6 +366,12 @@ label {
   top: 0;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .sticky {
+    z-index: 1;
+    position: absolute;
+  }
+}
 
 .Icon-container {
   display: flex;
@@ -419,6 +425,11 @@ label {
   padding-right: 12px;
   padding-bottom: 22px;
   margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .Holder-container {
+    height: 30px;
+  }
 }
 
 .Text-Container {
@@ -926,6 +937,11 @@ label {
   width: 100%;
 }
 
+.content {
+  height: auto;
+  overflow-y: auto;
+}
+
 .modal > .actions {
   width: 100%;
   margin: auto;
@@ -1005,6 +1021,11 @@ label {
 
 .cantidad {
   font-size: 18px;
+}
+
+.cantidad > p {
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 .button-cart {
