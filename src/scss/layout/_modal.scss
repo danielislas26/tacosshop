@@ -1,5 +1,8 @@
+@use '../base/mixins' as m;
 .popup-content {
-  
+   @include m.tablet{
+    width: 50%;
+   }
     margin: auto;
     background: rgb(255, 255, 255);
     width: 75%;
@@ -12,7 +15,9 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
-
+.header{
+  font-weight: 700;
+}
 
 
 .modal {
@@ -30,11 +35,10 @@
   }
   .modal > .content {
     width: 100%;
-    
-    
-  }
+    }
 
   .content{
+
     height: auto;
     overflow-y: auto;
   }
@@ -68,7 +72,10 @@
     background: #ffffff;
   }
   .menu-item {
-
+    @include m.tablet {
+      width: 94%;
+      
+    }
     cursor: pointer;
     padding: 13px;
     height: 28px;
@@ -79,12 +86,24 @@
     align-items: center;
     
   }
+
+.menu-item > p {
+  @include m.tablet {
+    font-size: 20px;
+  }
+  font-size: 15px;
+}
+
   .menu-item:hover {
     color: #2980b9;
   }
 
   .menu-counter{
     //padding: 0 10px 0 10px;
+    @include m.tablet{
+      margin: 10px 0 10px 0;
+      font-size: 20px;
+    }
     width: 40px;
     display: flex;
     justify-content: center;
@@ -99,6 +118,8 @@
     display: flex;
     flex-direction: row;
   }
+
+
 
   .acumulado-container{
     width: 100%;
@@ -119,7 +140,7 @@
   }
 
   .cantidad {
-    
+    font-weight: 600;
     font-size: 18px;
   }
   .cantidad > p {

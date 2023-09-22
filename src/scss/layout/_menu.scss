@@ -40,13 +40,23 @@
 
 .Menu-Block{
     @include m.tablet{
-        height: 50%;
+        height: 85%;
         margin-left: 12px;
         margin-right: 12px;
         background-color: white;
-        
-        
+        cursor: pointer;
+
     }
+
+.Menu-Block > label:hover {
+    color: #1A3D5F;
+}
+
+.Menu-Block > div:hover {
+    color: #1A3D5F;
+}
+
+
 
 
 

@@ -54,8 +54,8 @@ const Mapa = (props) => (
         </div>
         <div className="subText-Container">
           <label className="subText2 l1-s">
-            Abrimos por primera vez un domingo del 2021 en vista hermosa donde
-            traiamos la barbacoa desde hidalgo, actualmente la hacemos aqui
+            Abrimos por primera vez un domingo del 2019 en vista hermosa,
+            cuya barbacoa se preparaba desde el pueblo de acatlan hidalgo y se transportabá directamente hasta aqui, actualmente la hacemos aqui
             mismo en vista hermosa en horno y a la leña sin gas y con carne 100%
             de borrego cuya receta lleva 3 generaciones.
           </label>

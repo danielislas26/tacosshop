@@ -120,7 +120,7 @@ const comida = [
     price: 30,
     score: 100,
     description:
-      "Delicioso taco con barbacoa recien salida del horno sobre dos tortilla de maiz",
+      "25g de barbacoa recien salida del horno envuelto en dos tortillas",
     tipos: [
       {
         slink:"price_1Nkxv4H329Hy6dQiq8d5pOFL",
@@ -194,7 +194,7 @@ const comida = [
     price: 500,
     score: 89,
     description:
-      "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
+      "1 kilo de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
       { slink:"price_1Nky2IH329Hy6dQiTKPe5R1B", id: 3, subid: 12, title: "Costilla", precio: 500 },
       { slink:"price_1Nky3JH329Hy6dQiTqaPWtHE", id: 3, subid: 13, title: "Espaldilla", precio: 500 },
@@ -211,7 +211,7 @@ const comida = [
     price: 250,
     score: 63,
     description:
-      "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
+      "500gr de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
       { slink:"price_1Nky7hH329Hy6dQis2m8bsw6", id: 4, subid: 18, title: "Costilla", precio: 250 },
       { slink:"price_1Nky8bH329Hy6dQim6ecRfU5", id: 4, subid: 19, title: "Espaldilla", precio: 250 },
@@ -228,7 +228,7 @@ const comida = [
     price: 125,
     score: 50,
     description:
-      "Delicioso kilo de barbacoa hecha al horno con leña y sin hueso",
+      "250gr de barbacoa hecha al horno con leña y sin hueso",
     tipos: [
       { slink:"price_1NkyCKH329Hy6dQisUe7LFs5", id: 5, subid: 24, title: "Costilla", precio: 125 },
       { slink:"price_1NkyCzH329Hy6dQiSH7amItj", id: 5, subid: 25, title: "Espaldilla", precio: 125 },

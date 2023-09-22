@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../Menu";
+import { Menu } from "../Menu";
 import { Header } from "../Header";
 import { Holder, Anuncio } from "../Holder";
 import SideBar from "../Sidebar";

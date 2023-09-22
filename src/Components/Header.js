@@ -185,7 +185,9 @@ const ToolTipPositions = () => (
         <div className="Section">Menu</div>
         <div className="Section">Contacto</div>
         <div className="Section">Horario</div>
-        <div className="Section">Carrito</div>
+        <div className="Section">
+          <p>Carrito</p>
+        </div>
       </ul>
     </Popup>
   </div>
