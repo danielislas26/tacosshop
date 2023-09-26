@@ -87,6 +87,12 @@
     
   }
 
+  .ul-menu{
+    .menu-item{
+      border-bottom: none;
+    }
+  }
+
 .menu-item > p {
   @include m.tablet {
     font-size: 20px;

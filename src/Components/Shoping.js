@@ -7,9 +7,9 @@ const day = dt.getDay()
 
 function toDayDiscount(total){
 
- if(day <= 3 && total >= 350){
+ if(day <= 3 && total >= 400){
   return total*0.90
- } else if ( day > 3 && total >= 350 ) {
+ } else if ( day > 3 && total >= 400 ) {
   return total*0.95
  } else {
   return total
@@ -37,7 +37,7 @@ function CartPoup() {
   );
 
   const checkout = async () => {
-    await fetch('http://localhost:4000/checkout', {
+    await fetch('http://localhost:3001/checkout', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

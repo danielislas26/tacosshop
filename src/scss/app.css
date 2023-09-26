@@ -414,6 +414,12 @@ label {
   color: white;
 }
 
+.link {
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
 .Holder-container {
   display: flex;
   flex-direction: column;
@@ -843,6 +849,10 @@ label {
   }
 }
 
+.Menu-item {
+  padding: 10px;
+}
+
 .Menu-Popup {
   margin-top: 1px;
   height: 183px;
@@ -1003,6 +1013,10 @@ label {
   .menu-item {
     width: 94%;
   }
+}
+
+.ul-menu .menu-item {
+  border-bottom: none;
 }
 
 .menu-item > p {

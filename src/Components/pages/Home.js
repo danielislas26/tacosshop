@@ -16,11 +16,11 @@ function Home() {
       Menu={"menu-burger"}
       />
       <Menu></Menu>
-      <Holder />
+      <Holder/>
       <Anuncio />
       <SideBar />
-      <Instrucciones />
-      <Mapa />
+      <Instrucciones id="section1"/>
+      <Mapa/>
     </React.StrictMode>
   );
 }

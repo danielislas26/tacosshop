@@ -1,4 +1,5 @@
 import React, { useState, useContext, useRef } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Popup from "reactjs-popup";
 import { CartPoup } from "./Shoping";
 import { CartContext } from "../CartContext";
@@ -12,17 +13,33 @@ const Menu = (props) => {
       <div className="Menu-Popup-Container">
         <div className="Menu-Popup">
           <div className="Menu-Block l1-s-menu">
-            <label>Contacto</label>
+            <Link
+              to="About-Container"
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contacto
+            </Link>
           </div>
           <div className="Menu-Block l1-s-menu">
-            <label>Menu</label>
+            <Link to="Carrousel" smooth={true} offset={-70} duration={500}>
+              Menu
+            </Link>
           </div>
           <div>
-            <label>Bienvenido</label>
+            <label>Bienvenidos</label>
           </div>
 
           <div className="Menu-Block l1-s-menu">
-            <label>Horarios</label>
+            <Link
+              to="Instrucciones-Container"
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Instrucciones
+            </Link>
           </div>
           <div className="Menu-Block l1-s-menu">
             <Popup

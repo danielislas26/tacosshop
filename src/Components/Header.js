@@ -1,4 +1,5 @@
-import React, { useState, useContext,useRef } from "react";
+import React, { useContext } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Popup from "reactjs-popup";
@@ -23,21 +24,16 @@ class Header extends React.Component {
   }
 }
 
-
-
-
 const Des = (props) => {
   const cart = useContext(CartContext);
   const productsCount = cart.items.length;
- 
-   
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    window.addEventListener('scroll', myFunction());
+
+  document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", myFunction());
 
     let header = document.getElementById("myHeader");
     let sticky = header.offsetTop;
-    console.log(sticky)
+    console.log(sticky);
     function myFunction() {
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
@@ -45,10 +41,9 @@ const Des = (props) => {
         header.classList.remove("sticky");
       }
     }
-  })
+  });
 
- 
- /* const sticky = header.offsetTop;
+  /* const sticky = header.offsetTop;
 
   function myFunction() {
     if (window.pageYOffset > sticky) {
@@ -80,12 +75,26 @@ const Des = (props) => {
             on={["hover", "focus"]}
             arrow={"bottom left" !== "center center"}
           >
-            <ul className="Toolbar">
-              <div className="Section">
-                <p>Contacto</p>
+            <ul className="ul-menu">
+              <div className="menu-item">
+                <Link className="link"
+                  to="About-Container"
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Contacto
+                </Link>
               </div>
-              <div className="Section">
-                <p>Horario</p>
+              <div className="menu-item">
+                <Link className="link"
+                  to="Instrucciones-Container"
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Instrucciones
+                </Link>
               </div>
             </ul>
           </Popup>
