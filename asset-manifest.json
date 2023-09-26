@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tacoshop/static/css/main.9bf65047.css",
+    "main.js": "/tacoshop/static/js/main.06ed638f.js",
+    "static/media/Newbigbanner.png": "/tacoshop/static/media/Newbigbanner.20960315a2b326027b3f.png",
+    "static/media/banner.png": "/tacoshop/static/media/banner.767d42a3957c2bb5b3e8.png",
+    "static/media/babo-strech.png": "/tacoshop/static/media/babo-strech.5cff4742c5a91b65c42e.png",
+    "static/media/dino.png": "/tacoshop/static/media/dino.3f81fbb4c2a85af3b3b8.png",
+    "static/media/success2.png": "/tacoshop/static/media/success2.2b468f1fbfaf689b6f41.png",
+    "static/media/miniatura.png": "/tacoshop/static/media/miniatura.d022d6f3330242dfc803.png",
+    "static/media/Taco.webp": "/tacoshop/static/media/Taco.8bf89700d31c119387a0.webp",
+    "static/media/estrella.png": "/tacoshop/static/media/estrella.cc4b352297f4e22ec026.png",
+    "static/media/dolar.png": "/tacoshop/static/media/dolar.fddc61ef9299513170ae.png",
+    "index.html": "/tacoshop/index.html",
+    "main.9bf65047.css.map": "/tacoshop/static/css/main.9bf65047.css.map",
+    "main.06ed638f.js.map": "/tacoshop/static/js/main.06ed638f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bf65047.css",
+    "static/js/main.06ed638f.js"
+  ]
+}
