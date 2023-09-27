@@ -1,22 +1,28 @@
 {
   "files": {
     "main.css": "/tacosshop/static/css/main.9bf65047.css",
-    "main.js": "/tacosshop/static/js/main.b10586a3.js",
+    "main.js": "/tacosshop/static/js/main.d4699146.js",
     "static/media/Newbigbanner.png": "/tacosshop/static/media/Newbigbanner.20960315a2b326027b3f.png",
     "static/media/banner.png": "/tacosshop/static/media/banner.767d42a3957c2bb5b3e8.png",
+    "static/media/cuarto.jpg": "/tacosshop/static/media/cuarto.3a2714785dbe28be0ea6.jpg",
     "static/media/babo-strech.png": "/tacosshop/static/media/babo-strech.5cff4742c5a91b65c42e.png",
+    "static/media/Sorry.png": "/tacosshop/static/media/Sorry.28e32400d195a3d718d6.png",
     "static/media/dino.png": "/tacosshop/static/media/dino.3f81fbb4c2a85af3b3b8.png",
+    "static/media/consome.jpg": "/tacosshop/static/media/consome.69e98079cc24266af5a9.jpg",
     "static/media/success2.png": "/tacosshop/static/media/success2.2b468f1fbfaf689b6f41.png",
     "static/media/miniatura.png": "/tacosshop/static/media/miniatura.d022d6f3330242dfc803.png",
+    "static/media/Taco copy.webp": "/tacosshop/static/media/Taco copy.8bf89700d31c119387a0.webp",
     "static/media/Taco.webp": "/tacosshop/static/media/Taco.8bf89700d31c119387a0.webp",
+    "static/media/kilo.jpg": "/tacosshop/static/media/kilo.7abf73b7dc00efc1c1ff.jpg",
+    "static/media/medio.jpg": "/tacosshop/static/media/medio.6bef30d37c17ccda06dd.jpg",
     "static/media/estrella.png": "/tacosshop/static/media/estrella.cc4b352297f4e22ec026.png",
     "static/media/dolar.png": "/tacosshop/static/media/dolar.fddc61ef9299513170ae.png",
     "index.html": "/tacosshop/index.html",
     "main.9bf65047.css.map": "/tacosshop/static/css/main.9bf65047.css.map",
-    "main.b10586a3.js.map": "/tacosshop/static/js/main.b10586a3.js.map"
+    "main.d4699146.js.map": "/tacosshop/static/js/main.d4699146.js.map"
   },
   "entrypoints": [
     "static/css/main.9bf65047.css",
-    "static/js/main.b10586a3.js"
+    "static/js/main.d4699146.js"
   ]
 }
