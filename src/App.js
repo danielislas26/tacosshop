@@ -1,6 +1,6 @@
 import React from "react";
 import './scss/app.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./Components/pages/Home";
 import Success from "./Components/pages/Success";
 import Cancel from "./Components/pages/cancel";
@@ -9,10 +9,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/home" exact element={<Home/>}></Route>
+        <Route path="/tacosshop" exact element={<Home/>}></Route>
+        <Route path="/" exact element={<Home/>}></Route>
         <Route path="/compra_exitosa" exact element={<Success/>}></Route>
         <Route path="/cancel" exact element={<Cancel/>}></Route>
       </Routes>
+      
     </Router>
   )
 }
