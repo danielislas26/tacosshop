@@ -37,11 +37,11 @@ function CartPoup() {
   );
 
   const checkout = async () => {
-    await fetch('https://danielislas26.github.io/checkout', {
+    await fetch('https://danielislas26.github.io/tacosshop/checkout', {
       method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Content-Type': 'application/json'
+        
       },
       body: JSON.stringify({items: cart.items})
     }).then((response) => {
