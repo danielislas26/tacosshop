@@ -6,7 +6,7 @@ import Home from "./Home";
 function Cancel() {
     const navigate = useNavigate();
   function handleClick() {
-    navigate("/home");
+    navigate("/");
   }
   return (
     <div>

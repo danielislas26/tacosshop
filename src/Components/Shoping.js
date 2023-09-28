@@ -36,8 +36,10 @@ function CartPoup() {
     0
   );
 
+
+
   const checkout = async () => {
-    await fetch('http://localhost:3001/checkout', {
+    await fetch('http://192.168.1.192:3001/checkout', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -51,6 +53,7 @@ function CartPoup() {
       }
     })
   }
+  
   return (
     <>
       <div className="Modal-Header">

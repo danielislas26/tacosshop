@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 export default function Info() {
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/home");
+    navigate("/");
   }
   return (
     <div className="info-container">
