@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tacosshop/static/css/main.9bf65047.css",
-    "main.js": "/tacosshop/static/js/main.30cf4bfb.js",
+    "main.css": "/tacosshop/static/css/main.6fabf5f8.css",
+    "main.js": "/tacosshop/static/js/main.3045c51a.js",
     "static/media/Newbigbanner.png": "/tacosshop/static/media/Newbigbanner.20960315a2b326027b3f.png",
     "static/media/banner.png": "/tacosshop/static/media/banner.767d42a3957c2bb5b3e8.png",
     "static/media/cuarto.jpg": "/tacosshop/static/media/cuarto.3a2714785dbe28be0ea6.jpg",
@@ -18,11 +18,11 @@
     "static/media/estrella.png": "/tacosshop/static/media/estrella.cc4b352297f4e22ec026.png",
     "static/media/dolar.png": "/tacosshop/static/media/dolar.fddc61ef9299513170ae.png",
     "index.html": "/tacosshop/index.html",
-    "main.9bf65047.css.map": "/tacosshop/static/css/main.9bf65047.css.map",
-    "main.30cf4bfb.js.map": "/tacosshop/static/js/main.30cf4bfb.js.map"
+    "main.6fabf5f8.css.map": "/tacosshop/static/css/main.6fabf5f8.css.map",
+    "main.3045c51a.js.map": "/tacosshop/static/js/main.3045c51a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bf65047.css",
-    "static/js/main.30cf4bfb.js"
+    "static/css/main.6fabf5f8.css",
+    "static/js/main.3045c51a.js"
   ]
 }
