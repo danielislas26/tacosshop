@@ -618,7 +618,7 @@ label {
 
 .Card-Text-Container {
   width: auto;
-  height: auto;
+  height: 70px;
   background: #1A3D5F;
   border-radius: 0px 0px 5px 5px;
   display: flex;
