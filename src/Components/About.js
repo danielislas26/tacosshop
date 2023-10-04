@@ -37,7 +37,7 @@ const Mapa = (props) => (
             width={40}
             height={40}
           ></img>
-          <label className="l1-s subText1">55 73 38 13 15</label>
+          <a className="l1-s subText1" href="https://wa.me/525573381315">55 73 38 13 15</a>
         </div>
         <div className="subText-Container-icons">
           <img

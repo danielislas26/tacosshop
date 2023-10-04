@@ -7,7 +7,7 @@ function Evento() {
             <h3 className="Evento">
             Para Eventos
             </h3>
-            <h4 className="Evento-Contacto">Contactanos al 55 73-38-13-15</h4>
+            <a className="Evento-Contacto" href="https://wa.me/525573381315">Contactanos al 55 73-38-13-15</a>
             <p className="Incluye">incluye:</p>
             <ul className="Evento-Ul">
                 <li>Consome</li>
