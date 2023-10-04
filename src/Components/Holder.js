@@ -30,8 +30,6 @@ const Anuncio = (props) => (
       <label className="l1-s descuento">
         Obten 5% de descuento en tu compra ordenando de jueves a viernes comprando a partir de $400
       </label>
-      <h3>Buscas organizar un evento?</h3>
-      <label className="l1-s descuento">contactanos al 55 73 38 13 15</label>
     </div>
   </div>
 );

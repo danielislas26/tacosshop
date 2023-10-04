@@ -430,7 +430,6 @@ label {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 22px;
-  margin-bottom: 5px;
 }
 @media (min-width: 768px) {
   .Holder-container {
@@ -1609,4 +1608,44 @@ label {
   .Paso-Texto {
     width: 400px;
   }
+}
+
+.Evento-Container {
+  font-family: "Inter";
+  background-color: #204B75;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 10px;
+}
+.Evento-Container h3 {
+  padding-top: 10px;
+  margin: 0;
+}
+
+.Evento {
+  font-size: 26px;
+}
+
+.Evento-Contacto {
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.Incluye {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Inter";
+  color: white;
+}
+
+.Evento-Ul {
+  margin: 0;
+  font-family: "Inter";
+  font-size: 16px;
+  color: white;
+  padding-bottom: 15px;
+}
+.Evento-Ul li {
+  padding-top: 10px;
 }/*# sourceMappingURL=app.css.map */

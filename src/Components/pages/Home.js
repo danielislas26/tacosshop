@@ -1,4 +1,5 @@
 import React from "react";
+import { Evento } from "../Eventos";
 import { Menu } from "../Menu";
 import { Header } from "../Header";
 import { Holder, Anuncio } from "../Holder";
@@ -18,6 +19,7 @@ function Home() {
       <Menu></Menu>
       <Holder/>
       <Anuncio />
+      <Evento />
       <SideBar />
       <Instrucciones id="section1"/>
       <Mapa/>
