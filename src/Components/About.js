@@ -37,7 +37,9 @@ const Mapa = (props) => (
             width={40}
             height={40}
           ></img>
-          <a className="l1-s subText1" href="https://wa.me/525573381315">55 73 38 13 15</a>
+          <a className="l1-s subText1" href="https://wa.me/525573381315">
+            55 73 38 13 15
+          </a>
         </div>
         <div className="subText-Container-icons">
           <img
@@ -54,8 +56,9 @@ const Mapa = (props) => (
         </div>
         <div className="subText-Container">
           <label className="subText2 l1-s">
-            Abrimos por primera vez un domingo del 2019 en vista hermosa,
-            cuya barbacoa se preparaba desde el pueblo de acatlan hidalgo y se transportabá directamente hasta aqui, actualmente la hacemos aqui
+            Abrimos por primera vez un domingo del 2019 en vista hermosa, cuya
+            barbacoa se preparaba desde el pueblo de acatlan hidalgo y se
+            transportaba directamente hasta aquí, actualmente la hacemos aquí
             mismo en vista hermosa en horno y a la leña sin gas y con carne 100%
             de borrego cuya receta lleva 3 generaciones.
           </label>

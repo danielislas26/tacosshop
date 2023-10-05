@@ -14,10 +14,10 @@ export default function Greetings() {
         ></img>
       </div>
       <div>
-        <h3>Pago Completado Exitosamente</h3>
+        <h3 className="Pago-Titulo">Pago Completado Exitosamente</h3>
       </div>
       <div>
-        <h4>Gracias por tu compra</h4>
+        <h4 className="Pago-Gracias">Gracias por tu compra</h4>
       </div>
     </div>
   );

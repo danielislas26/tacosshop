@@ -1,14 +1,18 @@
-
+@use '../base/mixins' as m;
 .greets-container{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: solid 3px ;
+    border-bottom: solid 3px #1D4368;
 }
 
 .greets-container > div > h3 {
+
+    @include m.tablet{
+        font-size: 32px;
+    }
     color: black;
     font-size: 18px;
     font-weight: 600;
@@ -18,21 +22,39 @@
 .greets-container > div > h4 {
     font-family: "Lora";
     padding: 0 0 10px 0;
+    margin: 0;
+    @include m.tablet{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 .greets-container > div > img {
     padding-top: 40px;
 }
 
-.greets-container > div > h4 {
-    margin: 0;
-}
+
 
 .greets-container > div {
 display: flex;
 justify-content: center;
  width: 90%;   
 }
+
+.Envio{
+    
+
+    font-size: 20px;
+    font-weight: 600;
+    @include m.tablet{
+        display: flex;
+        justify-content: center;
+        font-family: 'Lora';
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
 
 .Titulo > h3 {
     color: black;
@@ -102,11 +124,23 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 0 25px 0 25px;
+    @include m.tablet{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    
+    }
 }
 
 .info-container > p {
     font-family: "Lora";
     font-weight: 400;
+    @include m.tablet{
+        font-weight: 700;
+        width: 70%;
+        font-size: 20px;
+    }
 }
 .info-container > div {
     padding-bottom: 30px;

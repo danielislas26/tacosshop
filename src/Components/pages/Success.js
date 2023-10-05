@@ -31,7 +31,7 @@ function getNextSaturday(date = new Date()) {
         <>
             
             <Greetings/>
-            <p>Puedes pasar por tu pedido este Domingo {getNextSaturday(new Date())} de {month}</p>
+            <p className="Envio">Puedes pasar por tu pedido este <mark> Domingo {getNextSaturday(new Date())} de {month}</mark> </p>
             <Imagen img='success2.png'/>
             <Info/>
             

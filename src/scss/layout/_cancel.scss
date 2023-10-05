@@ -1,12 +1,20 @@
+@use '../base/mixins' as m;
 .cancel-leyend-container{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .cancel-leyend{
     color: black;
     width: 90%;
+    display: flex;
+    @include m.tablet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .cancel-container{
