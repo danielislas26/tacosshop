@@ -14,7 +14,7 @@ const Mob = ({types}) => {
 
 
  
-  console.log(cart.items);
+
   
     
      return types.map((tipo) => {
