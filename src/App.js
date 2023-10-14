@@ -1,6 +1,6 @@
 import React from "react";
-import './scss/app.css';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import './scss/app.scss';
+import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Home from "./Components/pages/Home";
 import Success from "./Components/pages/Success";
 import Cancel from "./Components/pages/cancel";
