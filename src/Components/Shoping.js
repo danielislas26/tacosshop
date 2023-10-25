@@ -39,7 +39,7 @@ function CartPoup() {
 
 
   const checkout = async () => {
-    await fetch('http://localhost:3001/checkout', {
+    await fetch('https://localhost:3001/checkout', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
