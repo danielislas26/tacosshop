@@ -18,7 +18,7 @@ function toDayDiscount(total){
 }
 
 function able (day){
-  if(day < 6){
+  if(day === 0 || 6){
     return true
   } else {
     return false
