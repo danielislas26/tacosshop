@@ -17,7 +17,7 @@ function toDayDiscount(total){
 
 }
 
-console.log(day)
+
 
 function able (day){
   if(day === 0 || 6){
