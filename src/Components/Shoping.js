@@ -17,10 +17,10 @@ function toDayDiscount(total){
 
 }
 
-
+console.log(day)
 
 function able (day){
-  if(day === 0 || 6){
+  if(day === 0 || day === 6){
     return true
   } else {
     return false
