@@ -43,15 +43,6 @@ function Barra({ platillo, puntuacion, precio, descripcion, tipos, id, img }) {
               </div>
             </div>
             <div className="Text-Price">
-              <div className="price-Container">
-                <img
-                  src={require("../imgs/dolar.png")}
-                  alt="dolar-icon"
-                  width={22}
-                  height={22}
-                ></img>
-                <label className="l1-s">{precio}</label>
-              </div>
             </div>
           </div>
         }

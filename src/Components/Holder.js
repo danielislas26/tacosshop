@@ -4,7 +4,7 @@ const Holder = (props) => (
   <div className="Holder-container-img">
     <img
       className="banner"
-      src={require("../imgs/Newbigbanner.png")}
+      src={require("../imgs/bigbanner500.png")}
       alt="banner"
     ></img>
     <div className="imgContainer">
